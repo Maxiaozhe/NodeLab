@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "BLISystem", "IWBSystem\BLISystem.njsproj", "{1EB3B177-5B5D-482E-8959-A5420E29D223}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "EmployeeDB", "..\..\NodeJS-Sample-App-master\NodeJS-Sample-App-master\EmployeeDB.njsproj", "{254BED0A-445F-48A5-91AC-C0A35402B67D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EB3B177-5B5D-482E-8959-A5420E29D223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB3B177-5B5D-482E-8959-A5420E29D223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB3B177-5B5D-482E-8959-A5420E29D223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB3B177-5B5D-482E-8959-A5420E29D223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254BED0A-445F-48A5-91AC-C0A35402B67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254BED0A-445F-48A5-91AC-C0A35402B67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254BED0A-445F-48A5-91AC-C0A35402B67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1048190-8165-4E5D-B9FE-C6C6EA901756}
+	EndGlobalSection
+EndGlobal
