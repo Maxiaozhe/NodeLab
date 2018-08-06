@@ -19,7 +19,7 @@
     <ProjectGuid>1eb3b177-5b5d-482e-8959-a5420e29d223</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>test\UnitTest.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

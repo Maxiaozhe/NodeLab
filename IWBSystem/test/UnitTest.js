@@ -2,6 +2,7 @@
 var config = require("../config/config");
 var db = require("../control/database");
 var Product = require("../control/product");
+var path = require("path");
 var fs = require('fs');
 var analysis = require('../control/resultAnalysis');
 
@@ -31,30 +32,27 @@ function testInsert() {
 }
 
 function insertDatas() {
-    var buffer = fs.readFileSync('./test/test_datas.txt', { encoding: 'utf-8' });
+    console.log(process.cwd());
+    console.log(process.execPath);
+    var buffer = fs.readFileSync('./test/test_datas2.json','utf8');
     var datas = JSON.parse(buffer);
-    //var datas = {
-    //    "datas": [
-    //        {
-    //            "id": 2,
-    //            "name": "ricoh interactive whiteboard d5520",
-    //            "url": "https://www.ricoh.co.jp/iwb/d5520/",
-    //            "result": "IMG-1533028336205.json"
-    //        },
-    //        {
-    //            "id": 3,
-    //            "name": "RICOH DD 5450/5440",
-    //            "url": "http://www.ricoh.co.jp/opp/dd/5450_5440/",
-    //            "result": "IMG-1533029311598.json"
-    //        },
-    //        {
-    //            "id": 4,
-    //            "name": "pentax 645d 645z",
-    //            "url": "http://www.ricoh-imaging.co.jp/japan/products/645z-ir/",
-    //            "result": "IMG-1533041251018.json"
-    //        }
-    //    ]
-    //};
+    // var datas = {
+    //     "datas": [
+    //         {
+    //             "id": 1,
+    //             "name": "T shirt printstart Garment Printer Ri100",
+    //             "url": "https://rfgricoh.sharepoint.com/teams/sharepoint669/SitePages/Garment-Printer-Ri100.aspx",
+    //             "result": "../IMG-1533520899894.json"
+    //         },
+    //         {
+    //             "id": 2,
+    //             "name": "DOUBLE",
+    //             "url": "https://rfgricoh.sharepoint.com/teams/sharepoint669/SitePages/DOUBLE.aspx",
+    //             "result": "../IMG-1533521293954.json"
+    //         }
+    //     ]
+    // };
+    // fs.writeFileSync('./test/test_datas2.json',JSON.stringify(datas));
     db.connect().then(client => {
         for (data of datas.datas) {
             let count = 0;
@@ -72,6 +70,7 @@ function insertDatas() {
             product.insert(client, function () {
                 count++;
                 if (count === datas.datas.length) {
+                    console.info(`画像登録完了しました。${count}件登録しました。)`)
                     client.release();
                 }
             });
@@ -105,7 +104,10 @@ module.exports = {
             // testDatabase();
         } catch (ex) {
             console.log(ex);
+            console.log(ex);
         }
     }
 
 };
+
+//insertDatas();

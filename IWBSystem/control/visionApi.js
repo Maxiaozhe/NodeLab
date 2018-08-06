@@ -6,7 +6,7 @@ const request = require('request');
 const config = require('../config/config');
 const analysis = require('../control/resultAnalysis');
 const db = require('../control/database');
-const apiKey = config.APIKEY;
+const apiKey = config.APIKEY;   
 const maxResults = 100;
 
 //if (process.argv.length < 3) {
@@ -69,6 +69,7 @@ function detectImage(imagePath, wslist) {
             ]
         };
         const data = JSON.stringify(params);
+	//console.log(data);
         request.post({
             url: `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`,
             headers: {
@@ -142,6 +143,7 @@ function pushMessage(wslist, sendData) {
             try {
                 if (x.ws.readyState === 1) {
                     x.ws.send(sendData);
+                    //console.log("pushed!",sendData);
                 }
             } catch (ex) {
                 console.log(ex);

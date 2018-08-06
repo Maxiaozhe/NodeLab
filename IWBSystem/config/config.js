@@ -2,9 +2,9 @@
 module.exports = {
     /*画像ファイルの保存環境*/
     uploadPath: './public/upload/',
-    APIKEY: "AIzaSyBL6NtX1XlJKS547PZ9OEHRtt-tP_d9pxo",
-    ServiceAccountKey: "9c2dcb0629ce7c664728b1063dd003ce3808262a",
-    WS_HOST:"ws://52.198.165.235",
+    APIKEY: "XXXXXXXXXXXXXXXXXXXXXXXXX",
+    ServiceAccountKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    WS_HOST:"ws://11.12.22.11",
     WS_PATH: "/ws", //resive client(IWB側)
     HPPT_PORT:"80",
     postgreSql: {

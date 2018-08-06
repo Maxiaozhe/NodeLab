@@ -1,4 +1,4 @@
-///<reference path="jquery-3.3.1.js" />
+﻿///<reference path="jquery-3.3.1.js" />
 'use strict';
 const iwbApp = {};
 (function ($) {
@@ -63,7 +63,7 @@ const iwbApp = {};
             let msg = {
                 id: clientID,
                 state: state,
-                type: 'iwb',
+                type:'iwb',
                 data: data
             };
             ws.send(JSON.stringify(msg));
@@ -116,24 +116,8 @@ const iwbApp = {};
             return;
         }
         if (data && data.url) {
-            iwbApp.fullwin = openFullScreenWindow(data.url);
+            $("iframe.display").attr("src", data.url);
         }
-    }
-    function openFullScreenWindow(url) {
-        if(iwbApp.fullwin){
-            try{
-                iwbApp.fullwin.close();
-            }catch(ex){
-                console.log(ex);
-            }
-            iwbApp.fullwin=null;
-        }
-        let fullwin = window.open(url, 'fullwin', 'fullscreen=yes,ToolBar=No,Location=No,Directories=No,MenuBar=No,Status=no,scrollbars=no,resizable=no');
-        fullwin.moveTo(0, 0);
-        fullwin.resizeTo(screen.availWidth, screen.availHeight);
-        fullwin.outerWidth = screen.availWidth;
-        fullwin.outerHeight = screen.availHeight;
-        return fullwin;
     }
 
     function showResult(strJson) {
@@ -150,7 +134,7 @@ const iwbApp = {};
         let bestGuessLabels = response.bestGuessLabels;
         let fullMatchingImages = [];
         let SimilarImages = [];
-        if (response.fullMatchingImages && response.fullMatchingImages.length > 0) {
+        if (response.fullMatchingImages && response.fullMatchingImages.length>0) {
             fullMatchingImages.push(response.fullMatchingImages[0]);
         }
         if (response.partialMatchingImages) {

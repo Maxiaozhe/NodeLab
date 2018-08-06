@@ -161,6 +161,11 @@ const client = {};
             //context.drawImage(img, 0, 0, targetW, targetH);
             let magaImg = new MegaPixImage(img);
             magaImg.render(canvas, { width: targetW, height: targetH });
+            if(canvas.msToBlob){
+                  let msBlob = canvas.msToBlob();
+                  handleImgUpload(msBlob, imageFile.name, callback);  
+                  return;  
+            }
             let imgData = canvas.toBlob(function (bolb) {
                 handleImgUpload(bolb, imageFile.name, callback);
             }, imageFile.type);
