@@ -48,7 +48,13 @@ router.post('/', uploader.single('file'), function (req, res, next) {
 });
 
 function getWebSockets(clientID) {
-    let wslist = clients.filter(x => x.id === clientID || x.type === 'iwb');
+    let ws = clients.filter(x => x.id === clientID);
+    let wslist = [];
+    if (ws.type === 'sd') {
+        wslist = clients.filter(x => x.id === clientID || x.type === 'iwb');
+    } else {
+        wslist.push[ws];
+    }
     return wslist;
 }
 

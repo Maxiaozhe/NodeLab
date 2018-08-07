@@ -20,6 +20,8 @@ try {
     const sdServer = require('./routes/sdServer');
     const iwbServer = require('./routes/iwbServer');
     const upload = require("./routes/upload");
+    const regist = require("./routes/registServer");
+
 
     const app = express();
 
@@ -44,7 +46,9 @@ try {
 
     app.use('/', sdServer);
     app.use("/iwb", iwbServer);
+    app.use("/reg", regist);
     app.use('/upload', upload.router);
+
     //app.use('/users', users);
 
     // catch 404 and forward to error handler

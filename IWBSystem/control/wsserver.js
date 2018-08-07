@@ -39,14 +39,13 @@ function create(server, wsPool, path) {
         let ws = this;
         try {
             let message = JSON.parse(data);
+            registWs(message, ws);
             if (message && message.state) {
                 switch (message.state) {
+                    case 'open':
+                        ws.send('pong');
+                        break;
                     case 'ping':
-                        wsPool.push({
-                            id: message.id,
-                            type: message.type,
-                            ws: ws
-                        });
                         ws.send('pong');
                         break;
                     default:
@@ -58,12 +57,27 @@ function create(server, wsPool, path) {
         }
     }
 
+    function registWs(message, ws) {
+        let orgWs = wsPool.find(x => x.id === message.id);
+        if (!orgWs) {
+            wsPool.push({
+                id: message.id,
+                type: message.type,
+                ws: ws
+            });
+            return;
+        }
+        if (orgWs.ws!==ws) {
+            orgWs.ws = ws;
+        }
+    }
 
     function onClose(onClose) {
         try {
             // close
             let ws = this;
-            ws = wsPool.find(x => x.ws !== ws);
+            ws = wsPool.find(x => x.ws === ws);
+            console.log(`websocket (id= ${ws.id}) closed!`)
             wsPool.pop(ws);
         } catch (ex) {
             console.log(ex);

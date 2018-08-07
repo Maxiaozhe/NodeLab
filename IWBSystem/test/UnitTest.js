@@ -56,7 +56,8 @@ function insertDatas() {
     db.connect().then(client => {
         for (data of datas.datas) {
             let count = 0;
-            let rawData = fs.readFileSync(data.result, { encoding: 'utf-8' });
+            let resultFile = path.join("./public/result", data.id, ".json");
+            let rawData = fs.readFileSync(resultFile, { encoding: 'utf-8' });
             let json = JSON.parse(rawData);
             let resData = analysis.filterResult(json);
             let product = new Product(
@@ -70,7 +71,7 @@ function insertDatas() {
             product.insert(client, function () {
                 count++;
                 if (count === datas.datas.length) {
-                    console.info(`画像登録完了しました。${count}件登録しました。)`)
+                    console.info(`画像登録完了しました。${count}件登録しました。)`);
                     client.release();
                 }
             });

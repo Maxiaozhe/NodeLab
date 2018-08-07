@@ -8,13 +8,13 @@ function connect() {
     return db.connect();
 }
 /**
- * Quetyを実行する
+ * Quetyを実行する(Schemaがある時、未使用)
  * @param {PoolClient} client PoolClient(connectのcallbackで取得する)
  * @param {string} sql sql文
  * @param {Array} params　parameter
  * @param {function} callback callback(err,res)
  */
-function query(client, sql, params, callback) {
+function queryBySchema(client, sql, params, callback) {
     var setpath = `set search_path to "${config.postgreSql.schema}";`;
     client.query(setpath).then(res => {
         let qy = params ? client.query(sql, params) : client.query(sql);
@@ -26,9 +26,23 @@ function query(client, sql, params, callback) {
     }).catch(err => {
         callback(err);
     });
-
-   
 }
+/**
+ * Quetyを実行する
+ * @param {PoolClient} client PoolClient(connectのcallbackで取得する)
+ * @param {string} sql sql文
+ * @param {Array} params　parameter
+ * @param {function} callback callback(err,res)
+ */
+function query(client, sql, params, callback) {
+    let qy = params ? client.query(sql, params) : client.query(sql);
+    qy.then(res => {
+        callback(null, res);
+    }).catch(err => {
+        callback(err);
+    });
+}
+
 
 /**
  * テキスト検索

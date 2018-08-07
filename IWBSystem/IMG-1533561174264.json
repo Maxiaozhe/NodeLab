@@ -1,0 +1,257 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/04wv_",
+          "description": "moon",
+          "score": 0.9847442,
+          "topicality": 0.9847442
+        },
+        {
+          "mid": "/m/01d9ll",
+          "description": "astronomical object",
+          "score": 0.8969897,
+          "topicality": 0.8969897
+        },
+        {
+          "mid": "/m/01d74z",
+          "description": "night",
+          "score": 0.8789759,
+          "topicality": 0.8789759
+        },
+        {
+          "mid": "/m/01bqvp",
+          "description": "sky",
+          "score": 0.87777525,
+          "topicality": 0.87777525
+        },
+        {
+          "mid": "/m/01ctsf",
+          "description": "atmosphere",
+          "score": 0.87325615,
+          "topicality": 0.87325615
+        },
+        {
+          "mid": "/m/03qwvw",
+          "description": "moonlight",
+          "score": 0.7706501,
+          "topicality": 0.7706501
+        },
+        {
+          "mid": "/m/0314n",
+          "description": "full moon",
+          "score": 0.76608795,
+          "topicality": 0.76608795
+        },
+        {
+          "mid": "/m/02q7ylj",
+          "description": "daytime",
+          "score": 0.73642635,
+          "topicality": 0.73642635
+        },
+        {
+          "mid": "/m/01kyr8",
+          "description": "darkness",
+          "score": 0.7061477,
+          "topicality": 0.7061477
+        },
+        {
+          "mid": "/m/01mwkf",
+          "description": "monochrome",
+          "score": 0.6598025,
+          "topicality": 0.6598025
+        },
+        {
+          "mid": "/m/03w43x",
+          "description": "computer wallpaper",
+          "score": 0.59885174,
+          "topicality": 0.59885174
+        },
+        {
+          "mid": "/m/01g6gs",
+          "description": "black and white",
+          "score": 0.59627074,
+          "topicality": 0.59627074
+        },
+        {
+          "mid": "/m/02rhkz",
+          "description": "celestial event",
+          "score": 0.5840612,
+          "topicality": 0.5840612
+        },
+        {
+          "mid": "/m/01kv7h",
+          "description": "midnight",
+          "score": 0.5781425,
+          "topicality": 0.5781425
+        },
+        {
+          "mid": "/m/014kk_",
+          "description": "crescent",
+          "score": 0.5606506,
+          "topicality": 0.5606506
+        },
+        {
+          "mid": "/m/06wqb",
+          "description": "space",
+          "score": 0.5421817,
+          "topicality": 0.5421817
+        },
+        {
+          "mid": "/m/0dc_v",
+          "description": "astronomy",
+          "score": 0.53088623,
+          "topicality": 0.53088623
+        },
+        {
+          "mid": "/m/01833w",
+          "description": "outer space",
+          "score": 0.52649873,
+          "topicality": 0.52649873
+        },
+        {
+          "mid": "/m/036jvk",
+          "description": "stock photography",
+          "score": 0.5185797,
+          "topicality": 0.5185797
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/04wv_",
+            "score": 1.0246155,
+            "description": "Moon"
+          },
+          {
+            "entityId": "/m/0314n",
+            "score": 0.9260392,
+            "description": "Full moon"
+          },
+          {
+            "entityId": "/m/01tvlc",
+            "score": 0.4434,
+            "description": "Blue moon"
+          },
+          {
+            "entityId": "/m/014kk_",
+            "score": 0.41088116,
+            "description": "Crescent"
+          },
+          {
+            "entityId": "/m/02q7ylj",
+            "score": 0.3604672,
+            "description": "Daytime"
+          },
+          {
+            "entityId": "/m/01d74z",
+            "score": 0.35312402,
+            "description": "Night"
+          },
+          {
+            "entityId": "/m/01ctry",
+            "score": 0.3206,
+            "description": "Atmosphere of Earth"
+          },
+          {
+            "entityId": "/m/01833w",
+            "score": 0.30870304,
+            "description": "Outer space"
+          },
+          {
+            "entityId": "/m/0953kf",
+            "score": 0.28545,
+            "description": "Blue Moon"
+          },
+          {
+            "entityId": "/m/01kyr8",
+            "score": 0.23198368,
+            "description": "Darkness"
+          },
+          {
+            "entityId": "/m/0dc_v",
+            "score": 0.22966996,
+            "description": "Astronomy"
+          },
+          {
+            "entityId": "/m/03w43x",
+            "score": 0.22111423,
+            "description": "Desktop Wallpaper"
+          },
+          {
+            "entityId": "/m/036jvk",
+            "score": 0.20156208,
+            "description": "Stock photography"
+          },
+          {
+            "entityId": "/m/01mwkf",
+            "score": 0.19623017,
+            "description": "Monochrome"
+          },
+          {
+            "entityId": "/m/05wkw",
+            "score": 0.1869,
+            "description": "Photography"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://cdn.patchcdn.com/users/112920/2015/07/T800x600/20150755ba3206d6053.png"
+          },
+          {
+            "url": "https://news.mb.com.ph/wp-content/uploads/2018/01/full-moon.jpg"
+          },
+          {
+            "url": "https://cdn-images-1.medium.com/max/1000/1*r2jyPLoO9TjEY5mXTM7AuQ.png"
+          },
+          {
+            "url": "https://www.weekendnotes.com/im/009/07/supermoon11.jpg"
+          },
+          {
+            "url": "https://i1.wp.com/www.mangalorean.com/wp-content/uploads/2018/01/lunar-eclips-supermoon-bluemoon-mangalorean-20180131-001-14.jpg?resize=696%2C479"
+          },
+          {
+            "url": "http://4.bp.blogspot.com/-MHuAN_jnhSo/Vb4iVKcKwhI/AAAAAAAAVzw/khFk5Ei6tHE/s1600/blue%2Bmoon.jpg"
+          },
+          {
+            "url": "http://www.richmondandtwickenhamtimes.co.uk/resources/images/7347370/?type=responsive-gallery-fullscreen"
+          },
+          {
+            "url": "https://media.nbclosangeles.com/images/652*367/912508958-Super-Blue-Blood-Moon.jpg"
+          },
+          {
+            "url": "https://www.oneindia.com/img/2018/01/pti8-7-2017-000134b-04-1515036939.jpg"
+          },
+          {
+            "url": "https://i1.wp.com/voiceofpeopletoday.com/wp-content/uploads/2018/01/For-the-first-time-in-152-years-...-Half-the-world-watching-the-Blue-Blood-Moon-Giant-3.jpg?resize=640%2C411&ssl=1"
+          },
+          {
+            "url": "https://media.gettyimages.com/photos/full-blue-moon-the-last-blue-moon-of-2018-as-seen-over-oval-road-on-picture-id940413244?k=6&m=940413244&s=612x612&w=0&h=nkq9HsgJ2pHdjz4kM6vVDelNNIf6TZr4CRWMwbBJkz8="
+          },
+          {
+            "url": "https://i0.wp.com/www.mangalorean.com/wp-content/uploads/2018/01/lunar-eclips-supermoon-bluemoon-mangalorean-20180131-001-13.jpg?resize=696%2C451"
+          },
+          {
+            "url": "https://cdn.images.express.co.uk/img/dynamic/151/590x/secondary/Blue-Moon-2018-1268293.jpg"
+          },
+          {
+            "url": "http://images.scribblelive.com/2015/7/31/fe300b68-2318-4125-b448-ec5d5d0bf7d5_500.jpg"
+          },
+          {
+            "url": "https://img.purch.com/w/660/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAyMS8xOTYvb3JpZ2luYWwvYmx1ZS1tb29uLXRvbXNhamluc2EtbnljLTIuanBn"
+          },
+          {
+            "url": "https://cdn.images.express.co.uk/img/dynamic/151/590x/secondary/Blue-Moon-2018-Blue-Moon-2018-watch-Blue-Moon-2018-tonight-Blue-Moon-Blue-Moon-2018-Paschal-Moon-Blue-Moon-2018-explained-1290060.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "blue moon",
+            "languageCode": "en"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1192 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/0dw7n",
+          "description": "digital camera",
+          "score": 0.98531604,
+          "topicality": 0.98531604
+        },
+        {
+          "mid": "/m/0dv5r",
+          "description": "camera",
+          "score": 0.9750493,
+          "topicality": 0.9750493
+        },
+        {
+          "mid": "/m/0ggjh_8",
+          "description": "cameras & optics",
+          "score": 0.96944934,
+          "topicality": 0.96944934
+        },
+        {
+          "mid": "/m/07bjf",
+          "description": "single lens reflex camera",
+          "score": 0.9623243,
+          "topicality": 0.9623243
+        },
+        {
+          "mid": "/m/04f20t",
+          "description": "digital slr",
+          "score": 0.94108194,
+          "topicality": 0.94108194
+        },
+        {
+          "mid": "/m/01bjxx",
+          "description": "camera lens",
+          "score": 0.92447203,
+          "topicality": 0.92447203
+        },
+        {
+          "mid": "/m/02n3pb",
+          "description": "product",
+          "score": 0.91326463,
+          "topicality": 0.91326463
+        },
+        {
+          "mid": "/m/0118ms9c",
+          "description": "reflex camera",
+          "score": 0.90926504,
+          "topicality": 0.90926504
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.84480715,
+          "topicality": 0.84480715
+        },
+        {
+          "mid": "/m/05p4z41",
+          "description": "mirrorless interchangeable lens camera",
+          "score": 0.82358414,
+          "topicality": 0.82358414
+        },
+        {
+          "mid": "/m/0h8jz98",
+          "description": "camera accessory",
+          "score": 0.7386288,
+          "topicality": 0.7386288
+        },
+        {
+          "mid": "/m/04n4x",
+          "description": "lens",
+          "score": 0.72603047,
+          "topicality": 0.72603047
+        },
+        {
+          "mid": "/m/06q8h1",
+          "description": "lens hood",
+          "score": 0.68956345,
+          "topicality": 0.68956345
+        },
+        {
+          "mid": "/m/03qtgkw",
+          "description": "hardware",
+          "score": 0.61581033,
+          "topicality": 0.61581033
+        },
+        {
+          "mid": "/m/0gxj3h",
+          "description": "lens cap",
+          "score": 0.5639682,
+          "topicality": 0.5639682
+        },
+        {
+          "mid": "/m/025t6n0",
+          "description": "video camera",
+          "score": 0.5435315,
+          "topicality": 0.5435315
+        },
+        {
+          "mid": "/g/1tr17zw8",
+          "description": "flash photography",
+          "score": 0.500641,
+          "topicality": 0.500641
+        }
+      ],
+      "textAnnotations": [
+        {
+          "locale": "hu",
+          "description": "PENTAX\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 325,
+                "y": 119
+              },
+              {
+                "x": 415,
+                "y": 119
+              },
+              {
+                "x": 415,
+                "y": 148
+              },
+              {
+                "x": 325,
+                "y": 148
+              }
+            ]
+          }
+        },
+        {
+          "description": "PENTAX",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 325,
+                "y": 125
+              },
+              {
+                "x": 413,
+                "y": 119
+              },
+              {
+                "x": 414,
+                "y": 142
+              },
+              {
+                "x": 327,
+                "y": 148
+              }
+            ]
+          }
+        }
+      ],
+      "fullTextAnnotation": {
+        "pages": [
+          {
+            "property": {
+              "detectedLanguages": [
+                {
+                  "languageCode": "hu",
+                  "confidence": 1
+                }
+              ]
+            },
+            "width": 622,
+            "height": 500,
+            "blocks": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 325,
+                      "y": 125
+                    },
+                    {
+                      "x": 413,
+                      "y": 119
+                    },
+                    {
+                      "x": 414,
+                      "y": 142
+                    },
+                    {
+                      "x": 327,
+                      "y": 148
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 325,
+                          "y": 125
+                        },
+                        {
+                          "x": 413,
+                          "y": 119
+                        },
+                        {
+                          "x": 414,
+                          "y": 142
+                        },
+                        {
+                          "x": 327,
+                          "y": 148
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "hu"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 325,
+                              "y": 125
+                            },
+                            {
+                              "x": 413,
+                              "y": 119
+                            },
+                            {
+                              "x": 414,
+                              "y": 142
+                            },
+                            {
+                              "x": 327,
+                              "y": 148
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 325,
+                                  "y": 125
+                                },
+                                {
+                                  "x": 338,
+                                  "y": 124
+                                },
+                                {
+                                  "x": 340,
+                                  "y": 146
+                                },
+                                {
+                                  "x": 327,
+                                  "y": 147
+                                }
+                              ]
+                            },
+                            "text": "P",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 342,
+                                  "y": 124
+                                },
+                                {
+                                  "x": 354,
+                                  "y": 123
+                                },
+                                {
+                                  "x": 356,
+                                  "y": 145
+                                },
+                                {
+                                  "x": 344,
+                                  "y": 146
+                                }
+                              ]
+                            },
+                            "text": "E",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 357,
+                                  "y": 123
+                                },
+                                {
+                                  "x": 370,
+                                  "y": 122
+                                },
+                                {
+                                  "x": 372,
+                                  "y": 144
+                                },
+                                {
+                                  "x": 359,
+                                  "y": 145
+                                }
+                              ]
+                            },
+                            "text": "N",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 376,
+                                  "y": 122
+                                },
+                                {
+                                  "x": 387,
+                                  "y": 121
+                                },
+                                {
+                                  "x": 389,
+                                  "y": 143
+                                },
+                                {
+                                  "x": 378,
+                                  "y": 144
+                                }
+                              ]
+                            },
+                            "text": "T",
+                            "confidence": 1
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 389,
+                                  "y": 121
+                                },
+                                {
+                                  "x": 398,
+                                  "y": 120
+                                },
+                                {
+                                  "x": 400,
+                                  "y": 142
+                                },
+                                {
+                                  "x": 391,
+                                  "y": 143
+                                }
+                              ]
+                            },
+                            "text": "A",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "hu"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "LINE_BREAK"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 402,
+                                  "y": 120
+                                },
+                                {
+                                  "x": 413,
+                                  "y": 119
+                                },
+                                {
+                                  "x": 415,
+                                  "y": 141
+                                },
+                                {
+                                  "x": 404,
+                                  "y": 142
+                                }
+                              ]
+                            },
+                            "text": "X",
+                            "confidence": 0.99
+                          }
+                        ],
+                        "confidence": 0.99
+                      }
+                    ],
+                    "confidence": 0.99
+                  }
+                ],
+                "blockType": "TEXT",
+                "confidence": 0.99
+              }
+            ]
+          }
+        ],
+        "text": "PENTAX\n"
+      },
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/011px_br",
+            "score": 1.1546701,
+            "description": "Pentax 645Z"
+          },
+          {
+            "entityId": "/m/011q76hh",
+            "score": 0.77946,
+            "description": "Pentax 645D"
+          },
+          {
+            "entityId": "/m/0r4zhwz",
+            "score": 0.76758003,
+            "description": "Nikon D7100"
+          },
+          {
+            "entityId": "/m/02ht8r",
+            "score": 0.7056,
+            "description": "Pentax"
+          },
+          {
+            "entityId": "/m/04f20t",
+            "score": 0.7024,
+            "description": "Digital SLR"
+          },
+          {
+            "entityId": "/m/017zd8",
+            "score": 0.7002,
+            "description": "Medium format"
+          },
+          {
+            "entityId": "/m/0dv5r",
+            "score": 0.6741,
+            "description": "Camera"
+          },
+          {
+            "entityId": "/m/05wkw",
+            "score": 0.6649,
+            "description": "Photography"
+          },
+          {
+            "entityId": "/t/2h1chzkpmxx3m",
+            "score": 0.639
+          },
+          {
+            "entityId": "/m/02jwgz",
+            "score": 0.6387,
+            "description": "Ricoh"
+          },
+          {
+            "entityId": "/g/11c0xrlgfl",
+            "score": 0.5663
+          },
+          {
+            "entityId": "/m/01bjxx",
+            "score": 0.5071,
+            "description": "Camera lens"
+          },
+          {
+            "entityId": "/m/068jd",
+            "score": 0.4758,
+            "description": "Photograph"
+          },
+          {
+            "entityId": "/m/0jg24",
+            "score": 0.471,
+            "description": "Image"
+          },
+          {
+            "entityId": "/m/0dw7n",
+            "score": 0.0053920005,
+            "description": "Digital Cameras"
+          }
+        ],
+        "fullMatchingImages": [
+          {
+            "url": "https://1.img-dpreview.com/files/p/E~C0x0S473x355T1200x900~articles/9966439386/main_img_01.png"
+          },
+          {
+            "url": "https://img1.kakaku.k-img.com/Images/prdnews/2015112/20151127112533_528_.jpg"
+          },
+          {
+            "url": "http://dc.watch.impress.co.jp/img/dcw/list/732/595/important_image.jpg"
+          },
+          {
+            "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+          },
+          {
+            "url": "https://www.shutterbug.com/images/0813nikon01.jpg"
+          },
+          {
+            "url": "https://industry.ricoh.com/dc/img/lineup/img_645zir.jpg"
+          },
+          {
+            "url": "http://ascii.jp/elem/000/001/084/1084474/PENTAX_645Z_IR_588x.jpg"
+          },
+          {
+            "url": "https://dc.watch.impress.co.jp/img/dcw/docs/732/595/01_s.jpg"
+          },
+          {
+            "url": "https://2.img-dpreview.com/files/p/E~TS520x0~articles/9966439386/main_img_01.png"
+          },
+          {
+            "url": "http://www.ricoh-imaging.co.jp/english/products/645z-ir/top/img/main_img_01.png"
+          },
+          {
+            "url": "http://technews.in.ua/images/stories/pentax-645d-front.jpg"
+          }
+        ],
+        "partialMatchingImages": [
+          {
+            "url": "https://1.img-dpreview.com/files/p/E~C33x32S448x448T1200x1200~articles/9966439386/645z.png"
+          },
+          {
+            "url": "https://3.img-dpreview.com/files/p/E~C0x44S473x266T1200x675~articles/9966439386/main_img_01.png"
+          },
+          {
+            "url": "https://o.aolcdn.com/images/dims?thumbnail=980%2C653&quality=80&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fslideshows%2Fimages%2Fslides%2F373%2F148%2F6%2FS3731486%2Fslug%2Fl%2F01-1.jpg&client=cbc79c14efcebee57402&signature=84890b74b3b451f70380dbe418efe0d920feef07"
+          },
+          {
+            "url": "https://www.ivasfot.com/wp-content/uploads/2010/03/pentax645D.jpg"
+          },
+          {
+            "url": "https://o.aolcdn.com/dims-shared/dims3/GLOB/legacy_thumbnail/700x394/format/png/quality/85/https://s.aolcdn.com/hss/storage/midas/9040e0ffe916180cfa6b2aaf37dd43c8/203097580/00.jpg"
+          },
+          {
+            "url": "https://actuphoto.com/clients/fichiers/userfiles/images/Pentax645DwithDFA552.jpg"
+          },
+          {
+            "url": "https://i.wpimg.pl/312x208/m.fotoblogia.pl/149813-pentax-645z-ir-54a857dcb2.jpg"
+          },
+          {
+            "url": "http://wlfoto.ru/image/cache/catalog/Fotoapparaty/Pentax_645Z_IR_Body_0-250x250.jpg"
+          },
+          {
+            "url": "https://i.wpimg.pl/235x0/m.fotoblogia.pl/1578-c88e944ddd65d8517849cb223d8.jpg"
+          },
+          {
+            "url": "https://avatars.mds.yandex.net/get-mpic/331398/img_id5108707108756746479.jpeg/5hq"
+          },
+          {
+            "url": "https://3.img-dpreview.com/files/p/E~C33x32S448x448T137x137~articles/9966439386/645z.png"
+          }
+        ],
+        "pagesWithMatchingImages": [
+          {
+            "url": "http://www.ricoh-imaging.co.jp/english/products/645z-ir/",
+            "pageTitle": "<b>PENTAX</b> 645Z IR | RICOH IMAGING",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.ricoh-imaging.co.jp/english/products/645z-ir/top/img/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.dpreview.com/articles/3534328259/ricoh-adds-hd-pentax-da645-28-45mm-f4-5ed-aw-sr-to-medium-format-lens-lineup",
+            "pageTitle": "Ricoh adds HD <b>Pentax</b>-DA645 28-45mm F4.5ED AW SR to medium ...",
+            "partialMatchingImages": [
+              {
+                "url": "https://3.img-dpreview.com/files/p/E~C33x32S448x448T137x137~articles/9966439386/645z.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.pentax2u.com/products/Pentax-645D-Medium-Format-Digital-Camera-with-DFA-55mm-F2.8-AL-[IF]-SDM-AW-Lens/113",
+            "pageTitle": "<b>Pentax 645D</b> Medium Format Digital Camera with DFA 55mm F2.8 ...",
+            "partialMatchingImages": [
+              {
+                "url": "http://pentax2u.com/webshaper/pcm/pictures/Products/Pentax/645D/Pentax-645D-with-DFA55-2.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.dpreview.com/articles/1224960300/hands-on-with-the-pentax-645z",
+            "pageTitle": "Hands on with the <b>Pentax</b> 645Z: Digital Photography Review",
+            "fullMatchingImages": [
+              {
+                "url": "https://2.img-dpreview.com/files/p/E~TS520x0~articles/9966439386/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://luxurylaunches.com/gadgets/with_experience_training_and_a.php",
+            "pageTitle": "Top 10 most expensive cameras available - - Luxurylaunches",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.ourclipart.com/clipart/used%20pentax%20645d%20for%20sale/",
+            "pageTitle": "used <b>pentax 645d</b> for sale - OurClipart",
+            "fullMatchingImages": [
+              {
+                "url": "http://image.ourclipart.com/1989/19895247/used-pentax-645d-for-sale.png"
+              }
+            ]
+          },
+          {
+            "url": "http://creativethinkingpunyakerja.blogspot.com/2014/03/top-10-most-expensive-cameras-available.html",
+            "pageTitle": "Its all about camera.: TOP 10 MOST EXPENSIVE CAMERAS ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.thepentaxforum.co.uk/viewtopic.php?f=7&t=2521&p=27453",
+            "pageTitle": "<b>Pentax</b> launches limited-circulation 645Z IR • <b>Pentax</b> Digital Medium ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://2.static.img-dpreview.com/files/p/E~TS520x0~articles/9966439386/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.codp.co.za/pentax-launches-limited-circulation-645z-ir-an-infrared-version-of-its-medium-format-camera/",
+            "pageTitle": "<b>Pentax</b> Launches Limited-circulation 645z Ir, An Infrared Version Of ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.codp.co.za/wp-content/uploads/2015/12/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.pentaxforums.com/forums/16-pentax-news-rumors/308651-ir-version-645z-released-japan.html",
+            "pageTitle": "IR version of 645Z released [in Japan] - <b>Pentax</b> Forums",
+            "fullMatchingImages": [
+              {
+                "url": "http://i65.tinypic.com/aucn84.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.codp.co.za/author/admin/page/82/",
+            "pageTitle": "Codp | College of Digital Photography | Page 82",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.codp.co.za/wp-content/uploads/2015/12/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.shutterbug.com/content/nikon-d7100-lab-test-results-amp-comments",
+            "pageTitle": "Nikon D7100 DSLR Review | Shutterbug",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.shutterbug.com/images/0813nikon01.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://360photography.in/?tag=infrared",
+            "pageTitle": "infrared « 360Photography",
+            "fullMatchingImages": [
+              {
+                "url": "http://2.static.img-dpreview.com/files/p/E~TS520x0~articles/9966439386/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://www.lynnshomeliving.com/nikon-d7100-dslr-reviews.html",
+            "pageTitle": "nikon d7100 dslr reviews - 28 images - nikon d7100 hdr sle images ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.shutterbug.com/images/0813nikon01_0.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://3.wap.homecareprestige.com/nikon-d7100-dslr-camera-reviews.html",
+            "pageTitle": "nikon d7100 dslr reviews - 28 images - nikon d7100 review ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.shutterbug.com/images/0813nikon01_0.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://indiamotorhomerental.com/nikon-d7100-dslr-reviews.html",
+            "pageTitle": "nikon d7100 dslr reviews - 28 images - review is the nikon d7100 ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.shutterbug.com/images/0813nikon01_0.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://indiamotorhomerental.com/nikon-d7100-dslr-camera-reviews.html",
+            "pageTitle": "nikon d7100 dslr reviews - Indiamotorhomerental.com",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.shutterbug.com/images/0813nikon01_0.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://3.wap.homecareprestige.com/nikon-d7100-dslr-reviews.html",
+            "pageTitle": "nikon d7100 dslr reviews - Homecareprestige.com",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.shutterbug.com/images/0813nikon01_0.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://canacopegdl.com/keyword/infrared-canon-digital-cameras.html",
+            "pageTitle": "List of Synonyms and Antonyms of the Word: infrared canon digital ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://1.img-dpreview.com/files/p/articles/9966439386/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://www.thepinsta.com/expensive-camera_%7C3RPWYj4OmQSf*lvpHvdyjmtApusFL4V9sg%7CswIaxn0/",
+            "pageTitle": "Expensive Camera Pictures to Pin on Pinterest - ThePinsta",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.keywordlister.com/ZXhwZW5zaXZlIGNhbWVyYQ/",
+            "pageTitle": "Expensive Camera Related Keywords &amp; Suggestions - Expensive ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://canacopegdl.com/keyword/most-expensive-nikon-camera.html",
+            "pageTitle": "List of Synonyms and Antonyms of the Word: most expensive nikon ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://market.yandex.ru/product--zerkalnyi-fotoapparat-pentax-645d-body/6101261",
+            "pageTitle": "Купить Зеркальный фотоаппарат <b>Pentax 645D</b> Body по выгодной ...",
+            "partialMatchingImages": [
+              {
+                "url": "https://avatars.mds.yandex.net/get-mpic/331398/img_id5108707108756746479.jpeg/5hq"
+              }
+            ]
+          },
+          {
+            "url": "https://fotoblogia.pl/vs/10354,pentax-645d,10355,pentax-645z",
+            "pageTitle": "<b>Pentax 645D</b> vs Pentax 645Z - porównanie cech | Fotoblogia.pl",
+            "partialMatchingImages": [
+              {
+                "url": "https://i.wpimg.pl/235x0/m.fotoblogia.pl/1578-c88e944ddd65d8517849cb223d8.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.ivasfot.com/lanzamiento-de-la-camara-de-medio-formato-pentax-645d/",
+            "pageTitle": "Lanzamiento de la cámara de medio formato <b>Pentax 645D</b>. | IVASFOT",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.ivasfot.com/wp-content/uploads/2010/03/pentax645D.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.photoscala.de/2010/02/10/alle-jahre-wieder-pentax-645d-taucht-auf/",
+            "pageTitle": "Alle Jahre wieder: <b>Pentax 645D</b> taucht auf | photoscala",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.photoscala.de/bilder/Pentax-645D-Front.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.ricoh-imaging.co.jp/japan/products/645z-ir/",
+            "pageTitle": "赤外線カメラ<b>PENTAX</b> 645Z IR / デジタルカメラ / 製品 | RICOH IMAGING",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.ricoh-imaging.co.jp/japan/products/645z-ir/top/img/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://fotoblogia.pl/t/10355,pentax-645z",
+            "pageTitle": "<b>Pentax</b> 645Z - dane techniczne, opinie, ceny | Fotoblogia.pl",
+            "partialMatchingImages": [
+              {
+                "url": "https://i.wpimg.pl/312x208/m.fotoblogia.pl/149813-pentax-645z-ir-54a857dcb2.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.photoscala.de/2007/02/23/pma-2007-pentax-ausblick-objektive-blitzgeraet-und-645d/",
+            "pageTitle": "PMA 2007: <b>Pentax</b>-Ausblick – Objektive, Blitzgerät und <b>645D</b> ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.photoscala.de/bilder/Pentax-645D-Front.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.grandlife.nl/duurste-beste-cameras-ter-wereld/",
+            "pageTitle": "Top 10 Duurste &amp; Beste Camera&#39;s ter Wereld | Grandlife",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.ivasfot.com/page/262/?cat=4",
+            "pageTitle": "Revista | IVASFOT | Página 262",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.ivasfot.com/wp-content/uploads/2010/03/pentax645D.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://dc.watch.impress.co.jp/docs/news/732595.html",
+            "pageTitle": "赤外領域を撮影できる「<b>PENTAX</b> 645Z IR」 - デジカメ Watch Watch",
+            "fullMatchingImages": [
+              {
+                "url": "http://dc.watch.impress.co.jp/img/dcw/list/732/595/important_image.jpg"
+              },
+              {
+                "url": "https://dc.watch.impress.co.jp/img/dcw/docs/732/595/01_s.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://market.yandex.ru/product--zerkalnyi-fotoapparat-pentax-645z-body/10789297",
+            "pageTitle": "Купить Зеркальный фотоаппарат <b>Pentax</b> 645Z Body по выгодной ...",
+            "partialMatchingImages": [
+              {
+                "url": "https://avatars.mds.yandex.net/get-mpic/331398/img_id5108707108756746479.jpeg/5hq"
+              }
+            ]
+          },
+          {
+            "url": "http://ricehigh.blogspot.com/2015/",
+            "pageTitle": "2015 - RiceHigh&#39;s <b>Pentax</b> Blog",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.ricoh-imaging.co.jp/japan/products/645z-ir/top/img/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://www.zooma.ru/cat/photo_video/foto_pentax/zercalo_sredn/S0016613IR/",
+            "pageTitle": "Фотокамера <b>PENTAX</b> 645Z body IR купить по доступной цене ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.zooma.ru/upload/iblock/8fe/8feb602e322954f0c31503c57ca1ee5e.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.fotoaparat.cz/clanek/1422/pentax-645-z-ir/",
+            "pageTitle": "<b>Pentax</b> 645Z IR, který si nekoupíte | FotoAparát.cz",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.fotoaparat.cz/storage/a/14/1422/9r64m7gm-645zir.png"
+              }
+            ]
+          },
+          {
+            "url": "http://technews.in.ua/index.php/a",
+            "pageTitle": "Фото &amp; Відео",
+            "fullMatchingImages": [
+              {
+                "url": "http://technews.in.ua/images/stories/pentax-645d-front.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://diit.cz/clanek/pentax-prichystal-specialni-verzi-stredoformatu-645z-ir",
+            "pageTitle": "<b>Pentax</b> přichystal speciální verzi středoformátu 645Z IR | Diit.cz",
+            "fullMatchingImages": [
+              {
+                "url": "https://diit.cz/sites/default/files/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://actuphoto.com/25472-les-10-appareils-photo-les-plus-chers-au-monde.html",
+            "pageTitle": "Les 10 appareils photo les plus chers au monde | Actuphoto",
+            "partialMatchingImages": [
+              {
+                "url": "https://actuphoto.com/clients/fichiers/userfiles/images/Pentax645DwithDFA552.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.fotozona.it/magazine/pentax-645z-ir-48498",
+            "pageTitle": "<b>Pentax</b> 645Z IR, foto medio formato all&#39;infrarosso - FotoZona",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.fotozona.it/sites/default/files/magazine/2015/11/pentax-645z-ir-foto-medio-formato-allinfrarosso-cover48498.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://news.kakaku.com/prdnews/cd=camera/ctcd=0049/id=52814/",
+            "pageTitle": "価格.com - リコー、赤外線領域を撮影できる中判デジタル一眼「<b>PENTAX</b> ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://img1.kakaku.k-img.com/Images/prdnews/2015112/20151127112533_528_.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://japanese.engadget.com/2015/12/08/pentax-645z-ir-2016-1-15/",
+            "pageTitle": "赤外線も捉えるリコー製ハイスペック一眼レフカメラ『<b>PENTAX</b> 645Z IR ...",
+            "partialMatchingImages": [
+              {
+                "url": "https://o.aolcdn.com/dims-shared/dims3/GLOB/legacy_thumbnail/700x394/format/png/quality/85/https://s.aolcdn.com/hss/storage/midas/9040e0ffe916180cfa6b2aaf37dd43c8/203097580/00.jpg"
+              },
+              {
+                "url": "https://o.aolcdn.com/images/dims?thumbnail=980%2C653&quality=80&image_uri=http%3A%2F%2Fwww.blogcdn.com%2Fslideshows%2Fimages%2Fslides%2F373%2F148%2F6%2FS3731486%2Fslug%2Fl%2F01-1.jpg&client=cbc79c14efcebee57402&signature=84890b74b3b451f70380dbe418efe0d920feef07"
+              }
+            ]
+          },
+          {
+            "url": "http://www.fuji.com.tw/posts/3382",
+            "pageTitle": "<b>PENTAX</b>賓得士發佈645Z IR中片幅紅外線單眼相機 蘋果新聞-蘋果網",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.ricoh-imaging.co.jp/japan/products/645z-ir/spec/img/bod_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://wlfoto.ru/sochi/pentax",
+            "pageTitle": "Фотоаппараты <b>Pentax</b>",
+            "partialMatchingImages": [
+              {
+                "url": "http://wlfoto.ru/image/cache/catalog/Fotoapparaty/Pentax_645Z_IR_Body_0-250x250.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://www.android-games.download/habia-camaras-fotograficas-en-1810",
+            "pageTitle": "Habia Camaras Fotograficas En 1810 | Android Games",
+            "partialMatchingImages": [
+              {
+                "url": "http://www.ivasfot.com/wp-content/uploads/2010/03/pentax645D.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://dphotoworld.net/news/ricoh_anonsirovala_infrakrasnuju_pentax_645z_ir/2015-11-27-3809",
+            "pageTitle": "Ricoh анонсировала инфракрасную <b>Pentax</b> 645Z IR - Новости ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://dphotoworld.net/_nw/38/54946825.png"
+              }
+            ]
+          },
+          {
+            "url": "https://industry.ricoh.com/dc/",
+            "pageTitle": "業務用デジタルカメラ | 産業向け製品 | リコー - Ricoh",
+            "fullMatchingImages": [
+              {
+                "url": "https://industry.ricoh.com/dc/img/lineup/img_645zir.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://fototema.ru/news/78959-ricoh-anonsirovala-infrakrasnuyu-pentax-645z-ir.html",
+            "pageTitle": "Ricoh анонсировала инфракрасную камеру <b>Pentax</b> 645Z IR ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://fototema.ru/uploads/posts/2016-01/1453576733_pentax_645z_ir_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://ascii.jp/elem/000/001/084/1084478/",
+            "pageTitle": "ASCII.jp：リコー、文化財調査向けの赤外線中判カメラを発表",
+            "fullMatchingImages": [
+              {
+                "url": "http://ascii.jp/elem/000/001/084/1084474/PENTAX_645Z_IR_588x.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://sobakoffot.ru/gadget-news/18-news/491-ricoh-anonsirovala-infrakrasnuyu-pentax-645z-ir.html",
+            "pageTitle": "Ricoh анонсировала инфракрасную <b>Pentax</b> 645Z IR - sobakoffot",
+            "fullMatchingImages": [
+              {
+                "url": "http://dphotoworld.net/_nw/38/54946825.png"
+              }
+            ]
+          },
+          {
+            "url": "https://sobakoffot.ru/?start=5200",
+            "pageTitle": "новости фотоиндустрии со всего света, выставки, мероприятия ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://sobakoffot.ru/images/obgrabber/2015-11/438449747c.png"
+              }
+            ]
+          },
+          {
+            "url": "http://dicahub.com/pentax-645z-ir/press",
+            "pageTitle": "&quot;<b>PENTAX</b> 645Z IR&quot; 출시 - 디카허브",
+            "fullMatchingImages": [
+              {
+                "url": "http://dicahub.com/sites/default/files/image/2015/11/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "https://www.pinterest.jp/pin/132645151503322966/",
+            "pageTitle": "<b>Pentax</b> 645Z IR infrared medium format camera - Pinterest",
+            "fullMatchingImages": [
+              {
+                "url": "https://s-media-cache-ak0.pinimg.com/originals/d0/8f/e9/d08fe93ea6da7fa9764a65907cc5ccee.png"
+              }
+            ]
+          },
+          {
+            "url": "http://www.digicamezine.com/wp/2015/11/27/8784/",
+            "pageTitle": "赤外領域を撮影できる「<b>PENTAX</b> 645Z IR」(デジカメWatch) | デジカメジン",
+            "fullMatchingImages": [
+              {
+                "url": "http://www.digicamezine.com/wp/wp-content/uploads/2015/11/20151127_04.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://diit.cz/rubriky/foto-0?page=8",
+            "pageTitle": "Foto | Page 9 | Diit.cz",
+            "fullMatchingImages": [
+              {
+                "url": "https://diit.cz/sites/default/files/main_img_01.png"
+              }
+            ]
+          },
+          {
+            "url": "http://sva-fo.ru/ricoh-anonsirovala-infrakrasnuyu-pentax-645z-ir/",
+            "pageTitle": "Ricoh анонсировала инфракрасную <b>Pentax</b> 645Z IR - Свадебный ...",
+            "fullMatchingImages": [
+              {
+                "url": "http://dphotoworld.net/_nw/38/54946825.png"
+              }
+            ]
+          },
+          {
+            "url": "http://somaxaz.vremia-prishlo.ru/9980_z_pentaks",
+            "pageTitle": "Инструкция для пентакс <b>645</b> z - somaxaz.vremia-prishlo.ru",
+            "fullMatchingImages": [
+              {
+                "url": "https://dphotoworld.net/_nw/38/54946825.png"
+              }
+            ]
+          },
+          {
+            "url": "https://search.yahoo.co.jp/image/search?fr=top_ga1_sa&p=%E3%83%9A%E3%83%B3%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9+67+%E3%82%AB%E3%83%A1%E3%83%A9&ei=UTF-8&b=141",
+            "pageTitle": "「ペンタックス 67 カメラ」の検索結果 - Yahoo!検索（画像）",
+            "fullMatchingImages": [
+              {
+                "url": "http://img1.kakaku.k-img.com/Images/prdnews/2015112/20151127112533_528_.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://ar.pinterest.com/pin/580964420651890256/",
+            "pageTitle": "Con cámaras como esta graban en Hollywood las pelis en 8K echa ...",
+            "fullMatchingImages": [
+              {
+                "url": "https://s-media-cache-ak0.pinimg.com/originals/d0/8f/e9/d08fe93ea6da7fa9764a65907cc5ccee.png"
+              }
+            ]
+          },
+          {
+            "url": "http://photo.dgcr.com/page/19/",
+            "pageTitle": "写真を楽しむ生活 - Part 19",
+            "fullMatchingImages": [
+              {
+                "url": "http://photo.dgcr.com/wp-content/uploads/2015/11/PENTAX-645Z-IR.jpg"
+              }
+            ]
+          },
+          {
+            "url": "http://bouwkunst.archidev.info/tag/antiek-fototoestel-waarde/",
+            "pageTitle": "Antiek Fototoestel Waarde - ARCHIDEV",
+            "fullMatchingImages": [
+              {
+                "url": "http://luxurylaunches.com/wp-content/uploads/2012/05/pentax-645d-40mp.jpg"
+              }
+            ]
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "http://www.oelse.com/wp-content/uploads/2010/03/Pentax-645D.jpg"
+          },
+          {
+            "url": "https://images1.searchub.com/645d-format-slr-2xkbvTJDM3wGqg.jpg"
+          },
+          {
+            "url": "http://www.cameraegg.org/wp-content/uploads/2014/02/Pentax-645D-2014.jpg"
+          },
+          {
+            "url": "http://media.pricebook.co.id/images/product/L/22211_L_1.jpg"
+          },
+          {
+            "url": "http://digitalcameras.techfresh.net/wp-content/uploads/2010/03/Pentax-645D-Medium-Format-DSLR-11.jpg"
+          },
+          {
+            "url": "http://c.mobofree.com/m/5/539676fd5665ed86508b457e_1024x768/Pentax-645D-Digital-SLR-Camera-Photo-and-video-cameras-For-sale-at-All-Nigeria.jpg"
+          },
+          {
+            "url": "http://80skiparty.com/wp-content/uploads/2018/01/inspirational-pentax-645d-image-quality-pentax-645z-officially-announced-pentax-announcements-pentax-645d-image-quality.jpg"
+          },
+          {
+            "url": "https://www.swiatobrazu.pl/zdjecie/artykuly/147480/pentax-645d-pierwsza-cyfrowa-srednioformatowa-lustrzanka-pentax.jpg"
+          },
+          {
+            "url": "https://www.japantrendshop.com/img/pentax/pentax-645D-3.jpg"
+          },
+          {
+            "url": "http://digitalkameraverleih.com/pentax645d_digitalkameraverleih_1.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "pentax 645d",
+            "languageCode": "en"
+          }
+        ]
+      }
+    }
+  ]
+}

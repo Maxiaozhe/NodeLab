@@ -163,10 +163,9 @@ function getCategoryWords(resultData) {
 }
 
 
-
-
 module.exports = {
     filterResult: filterResult,
     getQueryWords: getQueryWords,
-    getCategory: getCategoryWords 
+    getCategory: getCategoryWords,
+    convertContentsToWords: convertContentsToWords
 };

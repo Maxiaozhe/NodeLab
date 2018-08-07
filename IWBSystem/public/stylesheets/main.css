@@ -123,3 +123,11 @@ iframe.display {
         background-color: #00ff00;
     }
 }
+.input-group-addon{
+    min-width:200px;
+}
+
+#regist{
+    float:right;
+    min-width:200px;
+}

@@ -188,7 +188,7 @@ const client = {};
                 let wsclient = new WebSocket(wshost);
                 wsclient.onopen = function (e) {
                     console.log('Connection to server opened=>' + 'clientID: ' + clientID);
-                    sendMessage('ping');
+                    sendMessage('open');
                 };
                 wsclient.onmessage = function (event) {
                     //console.log('Client received a message', event.data);

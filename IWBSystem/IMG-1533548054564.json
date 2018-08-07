@@ -1,0 +1,169 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/02n3pb",
+          "description": "product",
+          "score": 0.8763111,
+          "topicality": 0.8763111
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.82054496,
+          "topicality": 0.82054496
+        },
+        {
+          "mid": "/m/07c1v",
+          "description": "technology",
+          "score": 0.70007074,
+          "topicality": 0.70007074
+        },
+        {
+          "mid": "/m/0c_jw",
+          "description": "furniture",
+          "score": 0.6403857,
+          "topicality": 0.6403857
+        },
+        {
+          "mid": "/m/01m4t",
+          "description": "printer",
+          "score": 0.6367315,
+          "topicality": 0.6367315
+        },
+        {
+          "mid": "/m/01gx4y",
+          "description": "photocopier",
+          "score": 0.52947825,
+          "topicality": 0.52947825
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/01m4t",
+            "score": 1.1491632,
+            "description": "Printer"
+          },
+          {
+            "entityId": "/t/2h1chzkpmxx3m",
+            "score": 0.7153
+          },
+          {
+            "entityId": "/m/02jwgz",
+            "score": 0.7118,
+            "description": "Ricoh"
+          },
+          {
+            "entityId": "/m/01gx4y",
+            "score": 0.51121813,
+            "description": "Photocopier"
+          },
+          {
+            "entityId": "/m/0c5mq",
+            "score": 0.456,
+            "description": "Printing"
+          },
+          {
+            "entityId": "/g/11b5pm0w_1",
+            "score": 0.4066,
+            "description": "Premiere Training Centre"
+          },
+          {
+            "entityId": "/m/0806jls",
+            "score": 0.389,
+            "description": "Production"
+          },
+          {
+            "entityId": "/m/088n7",
+            "score": 0.263,
+            "description": "Japanese yen"
+          },
+          {
+            "entityId": "/m/026y05",
+            "score": 0.2577,
+            "description": "Productivity"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.21817699,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/01d_1l",
+            "score": 0.1926,
+            "description": "Price"
+          },
+          {
+            "entityId": "/m/02k5yk",
+            "score": 0.1854,
+            "description": "Monochrome painting"
+          },
+          {
+            "entityId": "/m/02r5ml",
+            "score": 0.1851,
+            "description": "Consumption"
+          },
+          {
+            "entityId": "/m/02cwm",
+            "score": 0.1675,
+            "description": "Design"
+          },
+          {
+            "entityId": "/m/0c_jw",
+            "score": 0.16349615,
+            "description": "Furniture"
+          }
+        ],
+        "fullMatchingImages": [
+          {
+            "url": "https://www.ricoh.co.jp/pp/hep/pro/6100/img/img-main-6100.jpg"
+          }
+        ],
+        "pagesWithMatchingImages": [
+          {
+            "url": "https://www.ricoh.co.jp/pp/hep/pro/6100/",
+            "pageTitle": "<b>RICOH</b> Pro 6100/6100HT / 基幹プリンティング | リコー",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.ricoh.co.jp/pp/hep/pro/6100/img/img-main-6100.jpg"
+              }
+            ]
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://www.zdnet.com/i/story/61/81/001868/doc-041811-art1.jpg"
+          },
+          {
+            "url": "http://ricohproductionprint.co.uk/assets/images/titles/ricoh-c901-title.jpg"
+          },
+          {
+            "url": "https://datasharp.uk.com/wp-content/uploads/2017/07/Ricoh-MP-6055-40-510x285.jpg.pagespeed.ce.HJZgim2uSA.jpg"
+          },
+          {
+            "url": "http://www.paperandprint.com/media/164793/rsz_ricoh_pro_c7110sx_1.jpg"
+          },
+          {
+            "url": "https://www.ricoh-europe.com/media/Production-Printers_tcm100-12816_w504.jpg"
+          },
+          {
+            "url": "http://s-yoolk-images.s3.amazonaws.com/my/product_catalog/product_images/x_medium/401170-396376-MP_4054SP?1503990803"
+          },
+          {
+            "url": "http://www.paperandprint.com/media/284187/crop_mba_ricoh.jpg"
+          },
+          {
+            "url": "http://www.lanier.com.au/media_bucket/OrchestraCMS/a0ww0000005xLJ4AAM.png"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "Ricoh"
+          }
+        ]
+      }
+    }
+  ]
+}

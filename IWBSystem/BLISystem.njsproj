@@ -5,7 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>BLISystem</Name>
     <RootNamespace>IWBSystem</RootNamespace>
-    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
@@ -19,7 +19,7 @@
     <ProjectGuid>1eb3b177-5b5d-482e-8959-a5420e29d223</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>test\UnitTest.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -89,6 +89,10 @@
     <Compile Include="routes\iwbServer.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\iwbServer2.js" />
+    <Compile Include="routes\registServer.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\sdServer.js" />
     <Compile Include="routes\upload.js">
       <SubType>Code</SubType>
@@ -98,6 +102,11 @@
     <None Include="BLISystem.pubxml" />
     <Content Include="config\service-account-file.json" />
     <Content Include="package.json" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="public\images\camera.png" />
     <Content Include="public\images\hd_logo.png" />
     <Content Include="public\stylesheets\bootstrap-theme.css" />
@@ -124,6 +133,7 @@
   <ItemGroup>
     <Folder Include="config\" />
     <Folder Include="control\" />
+    <Folder Include="public\fonts\" />
     <Folder Include="test\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
