@@ -222,7 +222,7 @@ const client = {};
             let msg = {
                 id: clientID,
                 state: state,
-                type: 'sd',
+                type: 'tab',
                 data: data
             };
             ws.send(JSON.stringify(msg));

@@ -1,9 +1,9 @@
 'usr strict';
 /**
  * 
- * @param {string} id 
- * @param {string} type 
- * @param {*} ws 
+ * @param {string} id clientId
+ * @param {string} type WSS種別（sd|iwb|reg|tab）
+ * @param {*} ws ws
  */
 function WsClient(id, type, ws) {
     this.id = id;

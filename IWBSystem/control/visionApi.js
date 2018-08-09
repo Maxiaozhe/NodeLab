@@ -19,6 +19,7 @@ const maxResults = 100;
  * 画像認識を処理する
  * @param {string} imagePath 画像のパス
  * @param {WebSocket[]} wslist WebSocket
+ * @param {Function} callback callback
  */
 function detectImage(imagePath, wslist,callback) {
     const feature = 'TEXT_DETECTION';

@@ -74,7 +74,7 @@ function create(server, wsPool, path) {
             let ws = this;
             ws = wsPool.find(x => x.ws === ws);
             if(ws){
-                console.log(`websocket (id= ${ws.id}) closed!`)
+                console.log(`websocket (id= ${ws.id}) closed!`);
                 wsPool.pop(ws);
             }
         } catch (ex) {
