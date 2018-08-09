@@ -68,6 +68,7 @@
     <Compile Include="control\visionControl.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="control\wsClient.js" />
     <Compile Include="control\wsserver.js">
       <SubType>Code</SubType>
     </Compile>
@@ -79,12 +80,14 @@
     <Compile Include="public\javascripts\iwb.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\javascripts\iwb2.js" />
     <Compile Include="public\javascripts\jquery-3.3.1.js" />
     <Compile Include="public\javascripts\jquery-3.3.1.min.js" />
     <Compile Include="public\javascripts\megapix-image.js" />
     <Compile Include="public\javascripts\regist.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\javascripts\tablet.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\iwbServer.js">
       <SubType>Code</SubType>
@@ -94,11 +97,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes\sdServer.js" />
+    <Compile Include="routes\tabletServer.js" />
     <Compile Include="routes\upload.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes\users.js" />
+    <Compile Include="routes\wserver.js" />
     <Compile Include="test\UnitTest.js" />
+    <Content Include="views\tablet.pug" />
     <None Include="BLISystem.pubxml" />
     <Content Include="config\service-account-file.json" />
     <Content Include="package.json" />
@@ -123,6 +129,7 @@
     <Content Include="views\iwb.pug">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\iwb2.pug" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
     <Content Include="views\regist.pug">
