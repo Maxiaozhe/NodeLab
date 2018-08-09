@@ -20,7 +20,7 @@ const maxResults = 100;
  * @param {string} imagePath 画像のパス
  * @param {WebSocket[]} wslist WebSocket
  */
-function detectImage(imagePath, wslist) {
+function detectImage(imagePath, wslist,callback) {
     const feature = 'TEXT_DETECTION';
     fs.readFile(imagePath, 'base64', (err, base64) => {
         if (err) {
@@ -127,9 +127,6 @@ function responseToWs(wslist, rawData,id,orgimg) {
             client.release();
         });
     });
-   
-
-
 }
 
 
@@ -142,10 +139,7 @@ function pushMessage(wslist, sendData) {
     if (wslist && wslist.length > 0) {
         wslist.forEach(x => {
             try {
-                if (x.ws.readyState === 1) {
-                    x.ws.send(sendData);
-                    //console.log("pushed!",sendData);
-                }
+                x.send(sendData);
             } catch (ex) {
                 console.log(ex);
             }

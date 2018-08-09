@@ -22,8 +22,13 @@ router.post("/", function (req, res) {
     //登録
     console.log(req);
     let data = req.body;
-    insertDatas(data, function (err, res) {
-        res.send('OK');
+    let response = res;
+    insertDatas(data, function (err, result) {
+        if(err){
+            response.status(403).send(err);   
+        }else{
+            response.send('OK');
+        }
     });
 });
 //DB登録

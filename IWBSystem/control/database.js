@@ -65,6 +65,7 @@ function queryContent(client, queryWords, callback) {
     sqls.push(" order by ts_rank(a.tsvector, to_tsquery($1)) desc");
     let andQuery = queryWords.join('&');
     let orQuery = queryWords.join('|');
+    console.log('SQL QUERy==>\n',sqls.join("\n"), andQuery,orQuery);
     query(client, sqls.join("\n"), [andQuery, orQuery], callback);
 }
 

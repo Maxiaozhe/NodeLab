@@ -1,7 +1,7 @@
 ﻿'use strict';
 const wss = require("ws").Server;
 const config = require("../config/config");
-
+const WsClient = require("./wsClient");
 
 /**
  * WebSocketサーバーを作成する
@@ -60,11 +60,7 @@ function create(server, wsPool, path) {
     function registWs(message, ws) {
         let orgWs = wsPool.find(x => x.id === message.id);
         if (!orgWs) {
-            wsPool.push({
-                id: message.id,
-                type: message.type,
-                ws: ws
-            });
+            wsPool.push(new WsClient(message.id,message.type,ws));
             return;
         }
         if (orgWs.ws!==ws) {
@@ -77,8 +73,10 @@ function create(server, wsPool, path) {
             // close
             let ws = this;
             ws = wsPool.find(x => x.ws === ws);
-            console.log(`websocket (id= ${ws.id}) closed!`)
-            wsPool.pop(ws);
+            if(ws){
+                console.log(`websocket (id= ${ws.id}) closed!`)
+                wsPool.pop(ws);
+            }
         } catch (ex) {
             console.log(ex);
         }

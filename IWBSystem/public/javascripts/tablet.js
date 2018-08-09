@@ -1,5 +1,6 @@
 ﻿///<reference path="jquery-3.3.1.js" />
 ///<reference path="megapix-image.js" />
+
 const client = {};
 (function ($) {
 
@@ -28,7 +29,7 @@ const client = {};
                 var files = e.originalEvent.dataTransfer.files;
                 uploadImage(files[0], function () {
                     //アップロード処理完了
-                    //alert("Uploaded!!!!");
+                    alert("Uploaded!!!!");
                 });
             }).on('dragout', function (e) {
                 $(filePicker).removeClass('dragover');
@@ -153,12 +154,17 @@ const client = {};
                 }
             }
             let canvas = document.createElement("canvas");
+            //let context = canvas.getContext("2d");
+            //canvas.width = targetW;
+            //canvas.height = targetH;
+            //context.clearRect(0, 0, targetW, targetH);
+            //context.drawImage(img, 0, 0, targetW, targetH);
             let magaImg = new MegaPixImage(img);
             magaImg.render(canvas, { width: targetW, height: targetH });
-            if (canvas.msToBlob) {
-                let msBlob = canvas.msToBlob();
-                handleImgUpload(msBlob, imageFile.name, callback);
-                return;
+            if(canvas.msToBlob){
+                  let msBlob = canvas.msToBlob();
+                  handleImgUpload(msBlob, imageFile.name, callback);  
+                  return;  
             }
             let imgData = canvas.toBlob(function (bolb) {
                 handleImgUpload(bolb, imageFile.name, callback);
@@ -194,7 +200,12 @@ const client = {};
                         return;
                     }
                     $("#result").html(showResult(event.data));
-                    initRegistForm();
+                    $(".similar-images,.full-matching-image").each(function () {
+                        $(this).on("load", function () {
+                            $(this).css("display", "");
+                        });
+                        $(this).attr("src", $(this).data("src"));
+                    });
                 };
                 wsclient.onclose = function (e) {
                     console.log('connection closed.');
@@ -211,7 +222,7 @@ const client = {};
             let msg = {
                 id: clientID,
                 state: state,
-                type: 'reg',
+                type: 'sd',
                 data: data
             };
             ws.send(JSON.stringify(msg));
@@ -286,138 +297,33 @@ const client = {};
         }
 
         let htmls = [];
-        //画像表示
-        htmls.push('<input id="imgid" type="hidden" value="' + response.id + '" ></div>');
-        htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + response.orgimg + "' ></div>");
-        htmls.push('<div class="container">');
-        htmls.push(' <div class="panel panel-default">');
-        htmls.push(' <div class="panel-heading"><h3 class="panel-title">検出情報</h3></div>');
-        htmls.push(' <div class=""panel-body">');
-        //ラベル生成
-        //ベストランク
-        htmls.push('<div class="a-rank">');
-        htmls.push('<span class="checkable btn btn-success"><span class="glyphicon glyphicon-ok" /><span class="hight-score label" data-score="Best" >' + bestGuessLabels[0].label + '</span></span>');
-        htmls.push('</div>');
-        //ラベル
-        htmls.push("<div class='b-rank'>");
+        if (fullMatchingImages.length > 0) {
+            htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + fullMatchingImages[0].url + "' ></div>");
+        } else {
+            htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + response.orgimg + "' ></div>");
+        }
+        let html = "<div class='container'><span class='best-guess-label btn btn-success hight-score' data-score='Best'>" + bestGuessLabels[0].label + "</span></div>";
+        htmls.push(html);
+        htmls.push("<div class='container'>");
         $(labelAnnotations).each(function () {
             htmls.push(setLabelScore(this, 'label-annotation btn btn-primary'));
         });
-        htmls.push('</div>');
-
-        //Webラベル
-        htmls.push("<div class='b-rank'>");
+        htmls.push("</div>");
+        htmls.push("<div class='container'>");
         $(webEntities).each(function () {
             htmls.push(setLabelScore(this, 'web-entitie btn btn-info'));
         });
-        htmls.push('</div>');
-        htmls.push('</div></div></div>');
-
-        htmls.push('<div class="container">');
-        htmls.push(' <div class="panel panel-default">');
-        htmls.push(' <div class="panel-heading"><h3 class="panel-title">情報登録</h3></div>');
-        htmls.push(' <div class=""panel-body">');
-        //body start
-        //FullText
-        if (response.fullTextAnnotation) {
-            htmls.push(setInputGroup('fulltext', 'OCR', '検出文字を追加、訂正してください', response.fullTextAnnotation));
-        }
-        htmls.push(setInputGroup('keyword', 'ラベル', '追加キーワードを入力してください'));
-        htmls.push(setInputGroup('url', 'URL', 'URLを入力してください'));
-        //body end
-        htmls.push('</div></div></div>');
-        //登録ボタン
+        htmls.push("</div>");
         htmls.push("<div class='container'>");
-        htmls.push("<button class='btn btn-success' id='regist'>登録</button>");
-        htmls.push('</div>');
-        return htmls.join("");
-    }
-
-    function initRegistForm() {
-        //set Check box 
-        $(".checkable").click(function (ev) {
-            let chkok = $(".glyphicon", this);
-            let label = $("span", this);
-            if (chkok.length > 0) {
-                chkok.remove();
-                return;
-            }
-            $("<span class='glyphicon glyphicon-ok'></span>").insertBefore(label);
-        });
-        $("#regist").click(regist);
-    }
-    //登録
-    function regist() {
-        // ダイアログ接続パス
-        let POST_URL = '/reg';
-        // リクエストパラメータを設定
-        let postData = {
-            id: $('#imgid').val(),
-            name: getName(),
-            category: getLabels(),
-            content: getContect(),
-            url:$("#url").val()
-        };
-        $.ajax({
-            type: 'POST',
-            url: POST_URL,
-            cache: false,
-            data: postData,
-            
-            success: function (response) {
-                alert('登録しました。');
-            },
-             error: function (data) {
-                let error = JSON.stringify(data);
-                alert(error);
-            }
-        });
-    }
-
-    function getName() {
-        let names = [];
-        let addkeyword = $("#keyword").val();
-        if (addkeyword) {
-            names.push(addkeyword);
+        if (response.fullTextAnnotation) {
+            htmls.push("<span class='fulltext-annotation well'><p>" + response.fullTextAnnotation + "</p></span>");
         }
-
-        $('.a-rank>.checkable:has(.glyphicon) .label').each(function () {
-            let label = $(this).text();
-            if (label) {
-                names.push(label);
-            }
+        htmls.push("</div");
+        htmls.push("<div class='container'>");
+        $(SimilarImages).each(function () {
+            htmls.push("<img class='similar-images img-thumbnail' style='display:none' data-src='" + this.url + "' >");
         });
-        return names.join(' ');
-    }
-
-
-    function getLabels() {
-        let names = [];
-        $('.b-rank>.checkable:has(.glyphicon) .label').each(function () {
-            let label = $(this).text();
-            if (label) {
-                names.push(label);
-            }
-        });
-        return names.join(' ');
-    }
-
-    function getContect() {
-        let fullText = $('#fulltext').val()||'';
-        return fullText;
-    }
-
-    function setInputGroup(id, caption, placeholder, text) {
-        let htmls = [];
-        if (text) {
-            text = $('<div/>').text(text).html();
-        } else {
-            text = '';
-        }
-        htmls.push('<div class="input-group">');
-        htmls.push('<span class="input-group-addon">' + caption + ':</span>');
-        htmls.push(' <input type="text" id="' + id + '" class="form-control" value="' + text + '" placeholder="' + placeholder + '" aria-describedby="basic-addon1" />');
-        htmls.push('</div>');
+        htmls.push("</div>");
         return htmls.join("");
     }
 
@@ -425,9 +331,9 @@ const client = {};
         let score = Math.round((entites.score ? entites.score : 0) * 10000) / 100;
         let html = "";
         if (score > 50) {
-            html = "<span class='checkable " + css + "'><span class='glyphicon glyphicon-ok' /><span class='hight-score label' data-score='" + score.toString() + "%' >" + entites.description + "</span></span>";
+            html = "<span class='" + css + " hight-score' data-score='" + score.toString() + "%' >" + entites.description + "</span>";
         } else {
-            html = "<span class='checkable " + css + "'><span class='glyphicon glyphicon-ok' /><span class='low-score label' data-score='" + score.toString() + "%' >" + entites.description + "</span></span>";
+            html = "<span class='" + css + " low-score' data-score='" + score.toString() + "%' >" + entites.description + "</span>";
         }
         return html;
     }

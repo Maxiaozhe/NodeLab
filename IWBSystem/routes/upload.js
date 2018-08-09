@@ -41,19 +41,29 @@ router.post('/', uploader.single('file'), function (req, res, next) {
         let filename = req.file.filename;
         let orgname = req.file.originalname;
         let clientID = req.param('clientID');
+        //画像検索を行う
+        let wsSelf=getWsClient(clientID);
         let wslist = getWebSockets(clientID);
         visionApi.detectImage(`./public/upload/${filename}`, wslist);
         res.send('POST OK' + orgname);
     }
 });
 
+function getWsClient(clientID){
+    let wslist = clients.find(x => x.id === clientID);
+    return wslist;
+}
+
 function getWebSockets(clientID) {
-    let ws = clients.filter(x => x.id === clientID);
-    let wslist = [];
-    if (ws.type === 'sd') {
+    let wslist = clients.filter(x => x.id === clientID);
+    if(wslist.length===0){
+        return clients.filter(x.type === 'iwb');
+    }
+    let ws = wslist[0];
+    if (ws && ws.type === 'sd') {
         wslist = clients.filter(x => x.id === clientID || x.type === 'iwb');
     } else {
-        wslist.push[ws];
+        wslist.push(ws);
     }
     return wslist;
 }
