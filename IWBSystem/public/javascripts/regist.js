@@ -1,6 +1,5 @@
 ﻿///<reference path="jquery-3.3.1.js" />
 ///<reference path="megapix-image.js" />
-
 const client = {};
 (function ($) {
 
@@ -29,7 +28,7 @@ const client = {};
                 var files = e.originalEvent.dataTransfer.files;
                 uploadImage(files[0], function () {
                     //アップロード処理完了
-                    alert("Uploaded!!!!");
+                    //alert("Uploaded!!!!");
                 });
             }).on('dragout', function (e) {
                 $(filePicker).removeClass('dragover');
@@ -43,7 +42,7 @@ const client = {};
                     // アップロード処理を行うメソッド
                     uploadImage(files[0], function () {
                         //アップロード処理完了
-                        alert("Uploaded!!!!");
+                        //alert("Uploaded!!!!");
                     });
                 }
             });
@@ -154,13 +153,13 @@ const client = {};
                 }
             }
             let canvas = document.createElement("canvas");
-            //let context = canvas.getContext("2d");
-            //canvas.width = targetW;
-            //canvas.height = targetH;
-            //context.clearRect(0, 0, targetW, targetH);
-            //context.drawImage(img, 0, 0, targetW, targetH);
             let magaImg = new MegaPixImage(img);
             magaImg.render(canvas, { width: targetW, height: targetH });
+            if (canvas.msToBlob) {
+                let msBlob = canvas.msToBlob();
+                handleImgUpload(msBlob, imageFile.name, callback);
+                return;
+            }
             let imgData = canvas.toBlob(function (bolb) {
                 handleImgUpload(bolb, imageFile.name, callback);
             }, imageFile.type);
@@ -175,32 +174,86 @@ const client = {};
       * @returns {WebSocket} WebSocket
       */
     function wsClientRegist(wshost) {
-        let ws = new WebSocket(wshost);
+        var lockReconnect = false;  //reconnect locker
         let clientID = client.clientID;
+        let ws = createWebSocket();
+        function createWebSocket() {
+            try {
+                let wsclient = new WebSocket(wshost);
+                wsclient.onopen = function (e) {
+                    console.log('Connection to server opened=>' + 'clientID: ' + clientID);
+                    sendMessage('open');
+                };
+                wsclient.onmessage = function (event) {
+                    //console.log('Client received a message', event.data);
+                    let data = event.data;
+                    if (typeof data === 'string' && data === 'pong') {
+                        console.log("pong!");
+                        $("#wsstate").prop('class', 'connecting');
+                        heartCheck.reset().start();
+                        return;
+                    }
+                    $("#result").html(showResult(event.data));
+                    initRegistForm();
+                };
+                wsclient.onclose = function (e) {
+                    console.log('connection closed.');
+                    reconnect();
+                };
+                return wsclient;
+            } catch (ex) {
+                console.error(ex);
+                reconnect();
+            }
+        }
 
-        ws.onopen = function (e) {
-            console.log('Connection to server opened=>' + 'clientID: ' + clientID);
-            sendMessage('opened');
-        };
-        ws.onmessage = function (event) {
-            //console.log('Client received a message', event.data);
-            $("#result").html(showResult(event.data));
-        };
-        ws.onclose = function (e) {
-            console.log('connection closed.');
-        };
         function sendMessage(state, data) {
             let msg = {
                 id: clientID,
                 state: state,
-                type: 'sd',
+                type: 'reg',
                 data: data
             };
             ws.send(JSON.stringify(msg));
         }
+
+        //reconnect
+        function reconnect() {
+            if (lockReconnect) return;
+            lockReconnect = true;
+            $("#wsstate").prop('class', 'closed');
+            setTimeout(function () {
+                client.clientID = getUniqueID(1000);
+                clientID = client.clientID;
+                ws = createWebSocket();
+                lockReconnect = false;
+            }, 2000);
+        }
+
+        //Hard check
+        var heartCheck = {
+            timeout: 540000,
+            timeoutObj: null,
+            serverTimeoutObj: null,
+            reset: function () {
+                clearTimeout(this.timeoutObj);
+                clearTimeout(this.serverTimeoutObj);
+                return this;
+            },
+            start: function () {
+                var self = this;
+                this.timeoutObj = setTimeout(function () {
+                    sendMessage("ping");
+                    console.log("ping!");
+                    self.serverTimeoutObj = setTimeout(function () {
+                        $("#wsstate").prop('class', 'closed');
+                        ws.close();
+                    }, self.timeout);
+                }, this.timeout);
+            }
+        };
         return ws;
     }
-
 
     function showResult(strJson) {
         let data = {};
@@ -216,8 +269,10 @@ const client = {};
         let bestGuessLabels = response.bestGuessLabels;
         let fullMatchingImages = [];
         let SimilarImages = [];
-        if (response.fullMatchingImages && response.fullMatchingImages.length > 0) {
-            fullMatchingImages.push(response.fullMatchingImages[0]);
+        if (response.fullMatchingImages) {
+            response.fullMatchingImages.forEach(function (item) {
+                fullMatchingImages.push(item);
+            });
         }
         if (response.partialMatchingImages) {
             response.partialMatchingImages.forEach(function (item) {
@@ -231,25 +286,151 @@ const client = {};
         }
 
         let htmls = [];
-        htmls.push("<div class='best-guess-label'>" + bestGuessLabels[0].label + "</div>");
-        if (fullMatchingImages.length > 0) {
-            htmls.push("<img class='full-matching-image' src='" + fullMatchingImages[0].url + "' >");
-        }
+        //画像表示
+        htmls.push('<input id="imgid" type="hidden" value="' + response.id + '" ></div>');
+        htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + response.orgimg + "' ></div>");
+        htmls.push('<div class="container">');
+        htmls.push(' <div class="panel panel-default">');
+        htmls.push(' <div class="panel-heading"><h3 class="panel-title">検出情報</h3></div>');
+        htmls.push(' <div class=""panel-body">');
+        //ラベル生成
+        //ベストランク
+        htmls.push('<div class="a-rank">');
+        htmls.push('<span class="checkable btn btn-success"><span class="glyphicon glyphicon-ok" /><span class="hight-score label" data-score="Best" >' + bestGuessLabels[0].label + '</span></span>');
+        htmls.push('</div>');
+        //ラベル
+        htmls.push("<div class='b-rank'>");
         $(labelAnnotations).each(function () {
-            htmls.push("<div class='label-annotation'>" + this.description + "</div>");
+            htmls.push(setLabelScore(this, 'label-annotation btn btn-primary'));
         });
-        if (response.fullTextAnnotation) {
-            htmls.push("<div class='fulltext-annotation'>" + response.fullTextAnnotation + "</div>");
-        }
+        htmls.push('</div>');
+
+        //Webラベル
+        htmls.push("<div class='b-rank'>");
         $(webEntities).each(function () {
-            htmls.push("<div class='web-entitie'>" + this.description + "</div>");
+            htmls.push(setLabelScore(this, 'web-entitie btn btn-info'));
         });
-        $(SimilarImages).each(function () {
-            htmls.push("<img class='similar-images' src='" + this.url + "' >");
-        });
+        htmls.push('</div>');
+        htmls.push('</div></div></div>');
+
+        htmls.push('<div class="container">');
+        htmls.push(' <div class="panel panel-default">');
+        htmls.push(' <div class="panel-heading"><h3 class="panel-title">情報登録</h3></div>');
+        htmls.push(' <div class=""panel-body">');
+        //body start
+        //FullText
+        if (response.fullTextAnnotation) {
+            htmls.push(setInputGroup('fulltext', 'OCR', '検出文字を追加、訂正してください', response.fullTextAnnotation));
+        }
+        htmls.push(setInputGroup('keyword', 'ラベル', '追加キーワードを入力してください'));
+        htmls.push(setInputGroup('url', 'URL', 'URLを入力してください'));
+        //body end
+        htmls.push('</div></div></div>');
+        //登録ボタン
+        htmls.push("<div class='container'>");
+        htmls.push("<button class='btn btn-success' id='regist'>登録</button>");
+        htmls.push('</div>');
         return htmls.join("");
     }
 
+    function initRegistForm() {
+        //set Check box 
+        $(".checkable").click(function (ev) {
+            let chkok = $(".glyphicon", this);
+            let label = $("span", this);
+            if (chkok.length > 0) {
+                chkok.remove();
+                return;
+            }
+            $("<span class='glyphicon glyphicon-ok'></span>").insertBefore(label);
+        });
+        $("#regist").click(regist);
+    }
+    //登録
+    function regist() {
+        // ダイアログ接続パス
+        let POST_URL = '/reg';
+        // リクエストパラメータを設定
+        let postData = {
+            id: $('#imgid').val(),
+            name: getName(),
+            category: getLabels(),
+            content: getContect(),
+            url:$("#url").val()
+        };
+        $.ajax({
+            type: 'POST',
+            url: POST_URL,
+            cache: false,
+            data: postData,
+            
+            success: function (response) {
+                alert('登録しました。');
+            },
+             error: function (data) {
+                let error = JSON.stringify(data);
+                alert(error);
+            }
+        });
+    }
+
+    function getName() {
+        let names = [];
+        let addkeyword = $("#keyword").val();
+        if (addkeyword) {
+            names.push(addkeyword);
+        }
+
+        $('.a-rank>.checkable:has(.glyphicon) .label').each(function () {
+            let label = $(this).text();
+            if (label) {
+                names.push(label);
+            }
+        });
+        return names.join(' ');
+    }
+
+
+    function getLabels() {
+        let names = [];
+        $('.b-rank>.checkable:has(.glyphicon) .label').each(function () {
+            let label = $(this).text();
+            if (label) {
+                names.push(label);
+            }
+        });
+        return names.join(' ');
+    }
+
+    function getContect() {
+        let fullText = $('#fulltext').val()||'';
+        return fullText;
+    }
+
+    function setInputGroup(id, caption, placeholder, text) {
+        let htmls = [];
+        if (text) {
+            text = $('<div/>').text(text).html();
+        } else {
+            text = '';
+        }
+        htmls.push('<div class="input-group">');
+        htmls.push('<span class="input-group-addon">' + caption + ':</span>');
+        htmls.push(' <input type="text" id="' + id + '" class="form-control" value="' + text + '" placeholder="' + placeholder + '" aria-describedby="basic-addon1" />');
+        htmls.push('</div>');
+        return htmls.join("");
+    }
+
+    function setLabelScore(entites, css) {
+        let score = Math.round((entites.score ? entites.score : 0) * 10000) / 100;
+        let html = "";
+        if (score > 50) {
+            html = "<span class='checkable " + css + "'><span class='glyphicon glyphicon-ok' /><span class='hight-score label' data-score='" + score.toString() + "%' >" + entites.description + "</span></span>";
+        } else {
+            html = "<span class='checkable " + css + "'><span class='glyphicon glyphicon-ok' /><span class='low-score label' data-score='" + score.toString() + "%' >" + entites.description + "</span></span>";
+        }
+        return html;
+    }
 
     function getUniqueID(myStrong) {
         let strong = 1000;

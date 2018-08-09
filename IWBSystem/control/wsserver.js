@@ -1,7 +1,7 @@
 ﻿'use strict';
 const wss = require("ws").Server;
 const config = require("../config/config");
-
+const WsClient = require("./wsClient");
 
 /**
  * WebSocketサーバーを作成する
@@ -39,14 +39,13 @@ function create(server, wsPool, path) {
         let ws = this;
         try {
             let message = JSON.parse(data);
+            registWs(message, ws);
             if (message && message.state) {
                 switch (message.state) {
+                    case 'open':
+                        ws.send('pong');
+                        break;
                     case 'ping':
-                        wsPool.push({
-                            id: message.id,
-                            type: message.type,
-                            ws: ws
-                        });
                         ws.send('pong');
                         break;
                     default:
@@ -58,13 +57,26 @@ function create(server, wsPool, path) {
         }
     }
 
+    function registWs(message, ws) {
+        let orgWs = wsPool.find(x => x.id === message.id);
+        if (!orgWs) {
+            wsPool.push(new WsClient(message.id,message.type,ws));
+            return;
+        }
+        if (orgWs.ws!==ws) {
+            orgWs.ws = ws;
+        }
+    }
 
     function onClose(onClose) {
         try {
             // close
             let ws = this;
-            ws = wsPool.find(x => x.ws !== ws);
-            wsPool.pop(ws);
+            ws = wsPool.find(x => x.ws === ws);
+            if(ws){
+                console.log(`websocket (id= ${ws.id}) closed!`)
+                wsPool.pop(ws);
+            }
         } catch (ex) {
             console.log(ex);
         }

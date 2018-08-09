@@ -20,7 +20,7 @@ const maxResults = 100;
  * @param {string} imagePath 画像のパス
  * @param {WebSocket[]} wslist WebSocket
  */
-function detectImage(imagePath, wslist) {
+function detectImage(imagePath, wslist,callback) {
     const feature = 'TEXT_DETECTION';
     fs.readFile(imagePath, 'base64', (err, base64) => {
         if (err) {
@@ -84,8 +84,8 @@ function detectImage(imagePath, wslist) {
                     return;
                 }
 
-                let resFilePath =
-                    `${path.basename(imagePath, path.extname(imagePath))}.json`;
+                let imgid = path.basename(imagePath, path.extname(imagePath));
+                let resFilePath =`${imgid}.json`;
                 let rawData = JSON.stringify(JSON.parse(body), null, 2);
                 fs.writeFile(resFilePath, rawData, (err) => {
                     console.log(`result json write: ${resFilePath}`);
@@ -93,7 +93,7 @@ function detectImage(imagePath, wslist) {
                 try {
                     let orgimgName =path.basename(imagePath);
                     let orgimg = `/upload/${orgimgName}`;
-                    responseToWs(wslist, rawData, orgimg);
+                    responseToWs(wslist, rawData, imgid, orgimg);
                 } catch (ex) {
                     console.log(ex);
                 }
@@ -102,13 +102,14 @@ function detectImage(imagePath, wslist) {
     });
 }
 
-function responseToWs(wslist,rawData,orgimg) {
+function responseToWs(wslist, rawData,id,orgimg) {
     let json = JSON.parse(rawData);
     let result = analysis.filterResult(json);
     result.orgimg = orgimg;
+    result.id = id;
     let sendData = JSON.stringify(result);
     let iwbClients = wslist.filter(ws => ws.type === 'iwb');
-    let sdClient = wslist.filter(ws => ws.type === 'sd');
+    let sdClient = wslist.filter(ws => ws.type !== 'iwb');
     //携帯側へ送信
     pushMessage(sdClient, sendData);
     //IWB側へ送信
@@ -126,9 +127,6 @@ function responseToWs(wslist,rawData,orgimg) {
             client.release();
         });
     });
-   
-
-
 }
 
 
@@ -141,10 +139,7 @@ function pushMessage(wslist, sendData) {
     if (wslist && wslist.length > 0) {
         wslist.forEach(x => {
             try {
-                if (x.ws.readyState === 1) {
-                    x.ws.send(sendData);
-                    //console.log("pushed!",sendData);
-                }
+                x.send(sendData);
             } catch (ex) {
                 console.log(ex);
             }

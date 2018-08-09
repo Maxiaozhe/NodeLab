@@ -37,13 +37,15 @@ const iwbApp = {};
                 let wsclient = new WebSocket(wshost);
                 wsclient.onopen = function (e) {
                     console.log('Connection to server opened=>' + 'clientID: ' + clientID);
-                    sendMessage('ping');
+                    sendMessage('open');
                 };
                 wsclient.onmessage = function (event) {
                     //console.log('Client received a message', event.data);
                     let data = event.data;
                     if (typeof data === 'string' && data === 'pong') {
+                        console.log("pong!");
                         $("#wsstate").prop('class', 'connecting');
+                        heartCheck.reset().start();
                         return;
                     }
                     jumpToUrl(event.data);
