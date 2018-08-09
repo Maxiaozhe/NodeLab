@@ -123,8 +123,16 @@ iframe.display {
         background-color: #00ff00;
     }
 }
-.input-group-addon{
-    min-width:200px;
+
+@media screen and (min-width: 600px){
+    .input-group-addon {
+        min-width: 200px;
+    }
+}
+@media screen and (min-width: 400px) and (max-width:600px ) {
+    .input-group-addon {
+        min-width: 120px;
+    }
 }
 
 #regist{

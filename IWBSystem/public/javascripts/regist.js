@@ -82,7 +82,8 @@ const client = {};
                     callback(data);
                 }.bind(file),
                 error: function (data) {
-                    alert(data);
+                    let error = JSON.stringify(data);
+                    alert(error);
                 }
             });
         }
@@ -365,6 +366,10 @@ const client = {};
             data: postData,
             success: function (response) {
                 alert('登録しました。');
+            },
+            error: function (data) {
+                let error = JSON.stringify(data);
+                alert(error);
             }
         });
     }

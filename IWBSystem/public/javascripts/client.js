@@ -316,7 +316,7 @@ const client = {};
         htmls.push("</div>");
         htmls.push("<div class='container'>");
         if (response.fullTextAnnotation) {
-            htmls.push("<span class='fulltext-annotation well'><p>" + response.fullTextAnnotation + "</p></span>");
+            htmls.push("<div class='fulltext-annotation well'><p>" + response.fullTextAnnotation + "</p></div>");
         }
         htmls.push("</div");
         htmls.push("<div class='container'>");
