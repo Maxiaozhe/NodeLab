@@ -2,11 +2,12 @@
 block content
   block header
     div(class='main panel-default')
-      div(class='panel-heading')=caption
-      div(id='droparea' class='img-drop-area')
+      div(id='droparea' class='preview-area')
         canvas(id='canvas')
-        input(id='fileupload' type='file' class='hidden' accept="image/gif,image/jpeg,image/png")
-    div(id='result')
+    div(id='console')
+      button(id='camera' class='btn btn-default')
+        span(class='glyphicon glyphicon-camera')
+      input(id='fileupload' type='file' class='hidden' accept="image/*")        
   block footer
     script(src="/javascripts/jquery-3.3.1.min.js")
     script(src="/javascripts/bootstrap.min.js")

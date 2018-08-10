@@ -14,7 +14,7 @@ const client = {};
          * @returns {any} filePicker
          * 
          */
-        fileUploader: function (fileInput) {
+        fileUploader: function (fileInput,button) {
             var filePicker = $(this);
             filePicker.attr('dropzone', 'copy file:');
             filePicker.on('dragenter', function (e) {
@@ -28,7 +28,7 @@ const client = {};
                 $(filePicker).removeClass('dragover');
                 e.preventDefault();
                 var files = e.originalEvent.dataTransfer.files;
-                common.showLoader();
+                common.showLoader($(".preview-area"));
                 uploadImage(files[0], function () {
                     //アップロード処理完了
                     common.changeStatus();
@@ -43,7 +43,7 @@ const client = {};
                 let files = $(this).get(0).files;
                 if (files) {
                     // アップロード処理を行うメソッド
-                    common.showLoader();
+                    common.showLoader($(".preview-area"));
                     uploadImage(files[0], function () {
                         //アップロード処理完了
                         //alert("Uploaded!!!!");
@@ -52,9 +52,13 @@ const client = {};
                 }
             });
 
-            filePicker.on("click", function () {
+            //filePicker.on("click", function () {
+            //    $(fileInput).get(0).click();
+            //});
+            $(button).on("click", function () {
                 $(fileInput).get(0).click();
             });
+
 
             $(document).on('dragenter dragover drop', function (e) {
                 e.stopPropagation();
@@ -126,7 +130,7 @@ const client = {};
     /* on Page Loaded */
     $(function () {
         //画像
-        $("#droparea").fileUploader($("#fileupload"));
+        $("#droparea").fileUploader($("#fileupload"), $('#camera'));
     });
 
     /**
@@ -139,6 +143,9 @@ const client = {};
         let img = new Image();
         $(reader).on("load", function (e) {
             img.src = e.target.result;
+            $(img).addClass("img img-responsive");
+            $(".preview-area").children().remove();
+            $(img).appendTo($(".preview-area"));
         });
         $(img).on("load", function () {
             let orgW = this.width;
@@ -164,6 +171,7 @@ const client = {};
             //context.clearRect(0, 0, targetW, targetH);
             //context.drawImage(img, 0, 0, targetW, targetH);
             let magaImg = new MegaPixImage(img);
+            
             magaImg.render(canvas, { width: targetW, height: targetH });
             if(canvas.msToBlob){
                   let msBlob = canvas.msToBlob();

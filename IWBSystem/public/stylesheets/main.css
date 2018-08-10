@@ -42,9 +42,25 @@ div.main {
     height: 300px;
 }
 
-.dragover {
-    border: 2px solid #0B85A1 !important;
+.preview-area {
+    /*border: 1px solid gray;*/
+    padding:12px 12px 12px 12px;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    bottom: 48px;
+    /*background-color:lightgray;*/
+    height: calc(100% - 78px);
+    overflow: hidden;
 }
+    .preview-area image {
+        max-width: 100%;
+        vertical-align:middle;
+    }
+
+    .dragover {
+        border: 2px solid #0B85A1 !important;
+    }
 
 iframe.display {
     width: 100%;
@@ -57,6 +73,26 @@ iframe.display {
 .container{
     text-align:center;
     align-items:center;
+}
+
+#console {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#camera {
+    width: 100px;
+    border-radius: 10px;
+}
+
+#camera span {
+    font-size: 30px;
 }
 
 .full-matching-image {
@@ -124,7 +160,7 @@ iframe.display {
     }
 }
 .input-group-addon{
-    min-width:200px;
+    min-width:100px;
 }
 
 #regist{
