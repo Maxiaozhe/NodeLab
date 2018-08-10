@@ -1,0 +1,564 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/013_1c",
+          "description": "statue",
+          "score": 0.9798349,
+          "topicality": 0.9798349
+        },
+        {
+          "mid": "/m/02ljgl",
+          "description": "monument",
+          "score": 0.950975,
+          "topicality": 0.950975
+        },
+        {
+          "mid": "/m/06msq",
+          "description": "sculpture",
+          "score": 0.94401234,
+          "topicality": 0.94401234
+        },
+        {
+          "mid": "/m/05_5t0l",
+          "description": "landmark",
+          "score": 0.90549743,
+          "topicality": 0.90549743
+        },
+        {
+          "mid": "/m/02q3d5",
+          "description": "memorial",
+          "score": 0.8332303,
+          "topicality": 0.8332303
+        },
+        {
+          "mid": "/m/0dgsmq8",
+          "description": "artwork",
+          "score": 0.6030558,
+          "topicality": 0.6030558
+        },
+        {
+          "mid": "/m/07bxq",
+          "description": "tourism",
+          "score": 0.59869355,
+          "topicality": 0.59869355
+        },
+        {
+          "mid": "/m/07j7r",
+          "description": "tree",
+          "score": 0.58295095,
+          "topicality": 0.58295095
+        }
+      ],
+      "textAnnotations": [
+        {
+          "locale": "ja",
+          "description": "おみやげ処 回\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 1024,
+                "y": 1348
+              },
+              {
+                "x": 1098,
+                "y": 1348
+              },
+              {
+                "x": 1098,
+                "y": 1364
+              },
+              {
+                "x": 1024,
+                "y": 1364
+              }
+            ]
+          }
+        },
+        {
+          "description": "おみやげ処",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 1024,
+                "y": 1348
+              },
+              {
+                "x": 1074,
+                "y": 1349
+              },
+              {
+                "x": 1074,
+                "y": 1364
+              },
+              {
+                "x": 1024,
+                "y": 1363
+              }
+            ]
+          }
+        },
+        {
+          "description": "回",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 1095,
+                "y": 1350
+              },
+              {
+                "x": 1098,
+                "y": 1350
+              },
+              {
+                "x": 1098,
+                "y": 1364
+              },
+              {
+                "x": 1095,
+                "y": 1364
+              }
+            ]
+          }
+        }
+      ],
+      "fullTextAnnotation": {
+        "pages": [
+          {
+            "property": {
+              "detectedLanguages": [
+                {
+                  "languageCode": "ja",
+                  "confidence": 1
+                }
+              ]
+            },
+            "width": 1152,
+            "height": 2048,
+            "blocks": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 1024,
+                      "y": 1348
+                    },
+                    {
+                      "x": 1098,
+                      "y": 1349
+                    },
+                    {
+                      "x": 1098,
+                      "y": 1364
+                    },
+                    {
+                      "x": 1024,
+                      "y": 1363
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 1024,
+                          "y": 1348
+                        },
+                        {
+                          "x": 1098,
+                          "y": 1349
+                        },
+                        {
+                          "x": 1098,
+                          "y": 1364
+                        },
+                        {
+                          "x": 1024,
+                          "y": 1363
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ja"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 1024,
+                              "y": 1348
+                            },
+                            {
+                              "x": 1074,
+                              "y": 1349
+                            },
+                            {
+                              "x": 1074,
+                              "y": 1364
+                            },
+                            {
+                              "x": 1024,
+                              "y": 1363
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1024,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1031,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1031,
+                                  "y": 1363
+                                },
+                                {
+                                  "x": 1024,
+                                  "y": 1363
+                                }
+                              ]
+                            },
+                            "text": "お",
+                            "confidence": 0.84
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1032,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1041,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1041,
+                                  "y": 1363
+                                },
+                                {
+                                  "x": 1032,
+                                  "y": 1363
+                                }
+                              ]
+                            },
+                            "text": "み",
+                            "confidence": 0.82
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1047,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1055,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1055,
+                                  "y": 1363
+                                },
+                                {
+                                  "x": 1047,
+                                  "y": 1363
+                                }
+                              ]
+                            },
+                            "text": "や",
+                            "confidence": 1
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1054,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1061,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1061,
+                                  "y": 1363
+                                },
+                                {
+                                  "x": 1054,
+                                  "y": 1363
+                                }
+                              ]
+                            },
+                            "text": "げ",
+                            "confidence": 1
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1065,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1074,
+                                  "y": 1349
+                                },
+                                {
+                                  "x": 1074,
+                                  "y": 1363
+                                },
+                                {
+                                  "x": 1065,
+                                  "y": 1363
+                                }
+                              ]
+                            },
+                            "text": "処",
+                            "confidence": 0.05
+                          }
+                        ],
+                        "confidence": 0.74
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ja"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 1095,
+                              "y": 1350
+                            },
+                            {
+                              "x": 1098,
+                              "y": 1350
+                            },
+                            {
+                              "x": 1098,
+                              "y": 1364
+                            },
+                            {
+                              "x": 1095,
+                              "y": 1364
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ja"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "LINE_BREAK"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 1095,
+                                  "y": 1350
+                                },
+                                {
+                                  "x": 1098,
+                                  "y": 1350
+                                },
+                                {
+                                  "x": 1098,
+                                  "y": 1364
+                                },
+                                {
+                                  "x": 1095,
+                                  "y": 1364
+                                }
+                              ]
+                            },
+                            "text": "回",
+                            "confidence": 0.11
+                          }
+                        ],
+                        "confidence": 0.11
+                      }
+                    ],
+                    "confidence": 0.63
+                  }
+                ],
+                "blockType": "TEXT",
+                "confidence": 0.63
+              }
+            ]
+          }
+        ],
+        "text": "おみやげ処 回\n"
+      },
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/013_1c",
+            "score": 1.3876754,
+            "description": "Statue"
+          },
+          {
+            "entityId": "/m/02q3d5",
+            "score": 0.8392547,
+            "description": "Memorial"
+          },
+          {
+            "entityId": "/g/120yrv6h",
+            "score": 0.489,
+            "description": "Tourism"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://www.hamhelsinki.fi/wp-content/uploads/2015/08/haaksirikkoiset1-800x1024.jpg"
+          },
+          {
+            "url": "http://ctmonuments.net/wp-content/uploads/2010/04/P1230277.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/81/ec/29/81ec29b88ee9aeeb0471ea5a00fb0ae0--urban-photography-public-art.jpg"
+          },
+          {
+            "url": "http://img.groundspeak.com/waymarking/0f31b51a-ba35-46ed-baac-3c4ed640bdc0.JPG"
+          },
+          {
+            "url": "http://www.asianbackpacker.com/wp-content/uploads/2012/06/DSC_5303.jpg"
+          },
+          {
+            "url": "https://untappedcities-wpengine.netdna-ssl.com/wp-content/uploads/2011/11/IMG_8495.jpg"
+          },
+          {
+            "url": "http://www.skylightstudiosinc.com/wp-content/uploads/IMG_0249.jpg"
+          },
+          {
+            "url": "https://www.worldwar1centennial.org/images/gmapfp/1035__john20pauling20bay20city20doughboy201.jpg"
+          },
+          {
+            "url": "https://silvertiger4.files.wordpress.com/2015/09/p1080362.jpg"
+          },
+          {
+            "url": "https://images.findagrave.com/photos250/photos/2001/222/habsburgelisabeth4.jpg"
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/%27Massacre_of_Tranent%27_memorial_in_Civic_Square%2C_Tranent%2C_East_Lothian.jpg"
+          },
+          {
+            "url": "https://l450v.alamy.com/450v/eexkwa/sir-ronald-gowers-memorial-to-william-shakespeare-bancroft-gardens-eexkwa.jpg"
+          },
+          {
+            "url": "https://l450v.alamy.com/450v/g176d5/the-seventh-regiment-memorial-at-central-park-in-new-york-city-usa-g176d5.jpg"
+          },
+          {
+            "url": "http://static.panoramio.com/photos/original/15960804.jpg"
+          },
+          {
+            "url": "http://www.wheelerfolk.org/norweb/photos/38vigelnd/05vige03.jpg"
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Louis_Riel_statue_and_legislative_building.JPG/360px-Louis_Riel_statue_and_legislative_building.JPG"
+          },
+          {
+            "url": "https://l450v.alamy.com/450v/ht56bn/statue-of-vladimir-lenin-in-saigon-ht56bn.jpg"
+          },
+          {
+            "url": "http://www.mandanhistory.org/images/307_TR_Cropped_New.jpg"
+          },
+          {
+            "url": "https://www.hmdb.org/Photos/21/Photo21894.jpg"
+          },
+          {
+            "url": "https://i0.wp.com/www.themodernpostcard.com/wp-content/uploads/2017/04/Magellan-Statue-Punta-Arenas.jpg"
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Etterbeek%2C_place_des_Acacias%2C_statue_de_Constantin_Meunier.jpg/576px-Etterbeek%2C_place_des_Acacias%2C_statue_de_Constantin_Meunier.jpg"
+          },
+          {
+            "url": "https://bantinghousenhsc.files.wordpress.com/2014/10/img_1843.jpg"
+          },
+          {
+            "url": "http://www.destinationsdetoursdreams.com/wp-content/uploads/2014/02/legislature-768x1024.jpg"
+          },
+          {
+            "url": "https://i0.wp.com/www.themodernpostcard.com/wp-content/uploads/2017/04/Ferdinand-Magellan-Statue-Punta-Arenas.jpg?resize=699%2C1124"
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Bolivar_statue%2C_Belgrave_Square%2C_Belgravia_-_DSC05405.JPG/1200px-Bolivar_statue%2C_Belgrave_Square%2C_Belgravia_-_DSC05405.JPG"
+          },
+          {
+            "url": "http://www.clanwallace.org/rewards/wallace%20Statue%20Aberdeen-6.jpg"
+          },
+          {
+            "url": "http://americanfriendsofsbt.org/wp-content/uploads/2013/02/Reverse-King-Lear.jpg"
+          },
+          {
+            "url": "http://www.libreriamedina.com/wp-content/uploads/2017/08/water-fountain-sculpture-surprising-12-wet-and-wild-10-bizarre-engaging-public-fountains.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "statue"
+          }
+        ]
+      }
+    }
+  ]
+}

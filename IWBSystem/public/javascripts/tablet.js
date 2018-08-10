@@ -1,5 +1,6 @@
 ﻿///<reference path="jquery-3.3.1.js" />
 ///<reference path="megapix-image.js" />
+///<reference path="common.js" />
 
 const client = {};
 (function ($) {
@@ -27,9 +28,10 @@ const client = {};
                 $(filePicker).removeClass('dragover');
                 e.preventDefault();
                 var files = e.originalEvent.dataTransfer.files;
+                common.showLoader();
                 uploadImage(files[0], function () {
                     //アップロード処理完了
-                    alert("Uploaded!!!!");
+                    common.changeStatus();
                 });
             }).on('dragout', function (e) {
                 $(filePicker).removeClass('dragover');
@@ -41,9 +43,11 @@ const client = {};
                 let files = $(this).get(0).files;
                 if (files) {
                     // アップロード処理を行うメソッド
+                    common.showLoader();
                     uploadImage(files[0], function () {
                         //アップロード処理完了
                         //alert("Uploaded!!!!");
+                        common.changeStatus();
                     });
                 }
             });
@@ -191,7 +195,6 @@ const client = {};
                     sendMessage('open');
                 };
                 wsclient.onmessage = function (event) {
-                    //console.log('Client received a message', event.data);
                     let data = event.data;
                     if (typeof data === 'string' && data === 'pong') {
                         console.log("pong!");
@@ -199,13 +202,8 @@ const client = {};
                         heartCheck.reset().start();
                         return;
                     }
-                    $("#result").html(showResult(event.data));
-                    $(".similar-images,.full-matching-image").each(function () {
-                        $(this).on("load", function () {
-                            $(this).css("display", "");
-                        });
-                        $(this).attr("src", $(this).data("src"));
-                    });
+                    common.hideLoader();
+                    jumpToUrl(event.data);
                 };
                 wsclient.onclose = function (e) {
                     console.log('connection closed.');
@@ -222,7 +220,7 @@ const client = {};
             let msg = {
                 id: clientID,
                 state: state,
-                type: 'tab',
+                type: 'iwb',
                 data: data
             };
             ws.send(JSON.stringify(msg));
@@ -266,76 +264,38 @@ const client = {};
         return ws;
     }
 
-    function showResult(strJson) {
+
+    function jumpToUrl(strJson) {
         let data = {};
         try {
             data = JSON.parse(strJson);
         } catch (ex) {
-            return strJson;
+            return;
         }
-        let response = data;
-        let labelAnnotations = response.labelAnnotations;
-        let webEntities = response.webEntities;
-        let visuallySimilarImages = response.visuallySimilarImages;
-        let bestGuessLabels = response.bestGuessLabels;
-        let fullMatchingImages = [];
-        let SimilarImages = [];
-        if (response.fullMatchingImages) {
-            response.fullMatchingImages.forEach(function (item) {
-                fullMatchingImages.push(item);
-            });
+        if (data && data.url) {
+            client.fullwin = openFullScreenWindow(data.url);
         }
-        if (response.partialMatchingImages) {
-            response.partialMatchingImages.forEach(function (item) {
-                SimilarImages.push(item);
-            });
-        }
-        if (response.visuallySimilarImages) {
-            response.visuallySimilarImages.forEach(function (item) {
-                SimilarImages.push(item);
-            });
-        }
-
-        let htmls = [];
-        if (fullMatchingImages.length > 0) {
-            htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + fullMatchingImages[0].url + "' ></div>");
-        } else {
-            htmls.push("<div class='container'><img class='full-matching-image img-thumbnail' src='" + response.orgimg + "' ></div>");
-        }
-        let html = "<div class='container'><span class='best-guess-label btn btn-success hight-score' data-score='Best'>" + bestGuessLabels[0].label + "</span></div>";
-        htmls.push(html);
-        htmls.push("<div class='container'>");
-        $(labelAnnotations).each(function () {
-            htmls.push(setLabelScore(this, 'label-annotation btn btn-primary'));
-        });
-        htmls.push("</div>");
-        htmls.push("<div class='container'>");
-        $(webEntities).each(function () {
-            htmls.push(setLabelScore(this, 'web-entitie btn btn-info'));
-        });
-        htmls.push("</div>");
-        htmls.push("<div class='container'>");
-        if (response.fullTextAnnotation) {
-            htmls.push("<span class='fulltext-annotation well'><p>" + response.fullTextAnnotation + "</p></span>");
-        }
-        htmls.push("</div");
-        htmls.push("<div class='container'>");
-        $(SimilarImages).each(function () {
-            htmls.push("<img class='similar-images img-thumbnail' style='display:none' data-src='" + this.url + "' >");
-        });
-        htmls.push("</div>");
-        return htmls.join("");
     }
 
-    function setLabelScore(entites, css) {
-        let score = Math.round((entites.score ? entites.score : 0) * 10000) / 100;
-        let html = "";
-        if (score > 50) {
-            html = "<span class='" + css + " hight-score' data-score='" + score.toString() + "%' >" + entites.description + "</span>";
-        } else {
-            html = "<span class='" + css + " low-score' data-score='" + score.toString() + "%' >" + entites.description + "</span>";
+    function openFullScreenWindow(url) {
+        if (client.fullwin) {
+            try {
+                client.fullwin.close();
+            } catch (ex) {
+                console.log(ex);
+            }
+            client.fullwin = null;
         }
-        return html;
+        let fullwin = window.open(url, 'fullwin', 'fullscreen=yes,ToolBar=No,Location=No,Directories=No,MenuBar=No,Status=no,scrollbars=no,resizable=no');
+        try {
+            fullwin.outerWidth = screen.availWidth;
+            fullwin.outerHeight = screen.availHeight;
+            fullwin.resizeTo(screen.availWidth, screen.availHeight);
+            fullwin.moveTo(0, 0);
+        } catch (ex) {
+            console.log(ex);
+        }
+        return fullwin;
     }
 
     function getUniqueID(myStrong) {

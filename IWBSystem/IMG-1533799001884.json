@@ -1,0 +1,123 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/07c1v",
+          "description": "technology",
+          "score": 0.8666652,
+          "topicality": 0.8666652
+        },
+        {
+          "mid": "/m/0bs7_0t",
+          "description": "electronic device",
+          "score": 0.7358554,
+          "topicality": 0.7358554
+        },
+        {
+          "mid": "/m/02mrp",
+          "description": "electronics",
+          "score": 0.6595437,
+          "topicality": 0.6595437
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.60968137,
+          "topicality": 0.60968137
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/02mrp",
+            "score": 0.733589,
+            "description": "Electronics"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.67765903,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/02cwm",
+            "score": 0.5715,
+            "description": "Design"
+          },
+          {
+            "entityId": "/m/01jwgf",
+            "score": 0.514,
+            "description": "Product"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://media.karousell.com/media/photos/products/2018/02/05/apple_magic_mouse_battery_acid_but_works_well_1517808762_2ee80668.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2015/07/31/energizer_portable_charger_10000mah_1438339603_15226cad.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/08/12/apple_ipod_shuffle_1502531176_1015d2080"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2016/07/11/d_link_n300_wifi_range_extender_dap1330_1468203780_0df87146.jpg"
+          },
+          {
+            "url": "https://farm8.static.flickr.com/7101/7246211128_08f19432a7_b.jpg"
+          },
+          {
+            "url": "https://get.pxhere.com/photo/laptop-smartphone-mobile-technology-white-telephone-gadget-black-mobile-phone-brand-electronics-design-books-smartisan-smartisan-t1-electronic-device-portable-communications-device-658236.jpg"
+          },
+          {
+            "url": "https://teja8.kuikr.com/i4/20180315/Apple-dock--ipod-nd-iphone--ak_LWBP1381578975-1521101819.jpeg"
+          },
+          {
+            "url": "https://i.ebayimg.com/images/g/~bEAAOSwpRRWp3xO/s-l400.jpg"
+          },
+          {
+            "url": "https://images.offerup.com/3C9HZLeh4bO_A6vcH4d1vuKx-N0=/600x800/1498/1498d9245497485991f307ebfdb71386.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2018/02/26/apple_airport_extreme_1519652964_b5c1ae03.jpg"
+          },
+          {
+            "url": "http://i.ebayimg.com/images/g/ZEsAAOSwo0JWFfqc/s-l300.jpg"
+          },
+          {
+            "url": "https://3.imimg.com/data3/BB/VE/MY-18659749/apple-iphone-6-plus-original-unlocked-500x500.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/06/22/pandora_neo_classic_no_900_radio_alarm_clock__maple_1498063745_a42aff82.jpg"
+          },
+          {
+            "url": "https://i.ytimg.com/vi/T29VpYrQ3_k/hqdefault.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2016/07/24/aztech_wireless_extender_1469363557_fa7fe1fd.jpg"
+          },
+          {
+            "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1734727076838843"
+          },
+          {
+            "url": "http://www.therebreathersite.nl/13_Inspiration/images/NormoxicTrimix/Picture2.jpg"
+          },
+          {
+            "url": "https://www.picclickimg.com/d/l400/pict/253564067720_/Waeco-Secop-power-board-electronics-waeco-compressor-fridge.jpg"
+          },
+          {
+            "url": "https://images.offerup.com/Y7zJD3dAnZPvQBv8fLyBQJfjIvY=/600x1066/6997/699769ced5154fd0bc49dd718b1fc2b5.jpg"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB1BJRnIXXXXXbMXVXXq6xXFXXXM/Bulls-converter-GN-L01CA-GB-transfer-American-standard-power-converter-to-convert-imported-electrical-plug-socket.jpg_640x640.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "electronics"
+          }
+        ]
+      }
+    }
+  ]
+}

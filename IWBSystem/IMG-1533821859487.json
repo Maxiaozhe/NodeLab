@@ -1,0 +1,153 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/09qqq",
+          "description": "wall",
+          "score": 0.81139404,
+          "topicality": 0.81139404
+        },
+        {
+          "mid": "/m/01bqvp",
+          "description": "sky",
+          "score": 0.6487289,
+          "topicality": 0.6487289
+        },
+        {
+          "mid": "/m/01jm2n",
+          "description": "walkway",
+          "score": 0.5728855,
+          "topicality": 0.5728855
+        },
+        {
+          "mid": "/m/02q3d5",
+          "description": "memorial",
+          "score": 0.5384673,
+          "topicality": 0.5384673
+        },
+        {
+          "mid": "/m/06hyd",
+          "description": "roof",
+          "score": 0.53735095,
+          "topicality": 0.53735095
+        },
+        {
+          "mid": "/m/08t9c_",
+          "description": "grass",
+          "score": 0.5324374,
+          "topicality": 0.5324374
+        },
+        {
+          "mid": "/m/06bm2",
+          "description": "recreation",
+          "score": 0.5144048,
+          "topicality": 0.5144048
+        },
+        {
+          "mid": "/m/01k0mv",
+          "description": "road surface",
+          "score": 0.5109112,
+          "topicality": 0.5109112
+        },
+        {
+          "mid": "/m/025s3q0",
+          "description": "landscape",
+          "score": 0.50522476,
+          "topicality": 0.50522476
+        },
+        {
+          "mid": "/m/07j7r",
+          "description": "tree",
+          "score": 0.50077426,
+          "topicality": 0.50077426
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/06hyd",
+            "score": 0.64390093,
+            "description": "Roof"
+          },
+          {
+            "entityId": "/m/01jm2n",
+            "score": 0.61182207,
+            "description": "Walkway"
+          },
+          {
+            "entityId": "/m/06bm2",
+            "score": 0.60683775,
+            "description": "Recreation"
+          },
+          {
+            "entityId": "/m/03p1p8r",
+            "score": 0.4557,
+            "description": "Sky plc"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "http://hydeparklandscape.com/wp-content/uploads/2015/01/Seatwall-1.jpg"
+          },
+          {
+            "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1806909762682900"
+          },
+          {
+            "url": "http://pandgpropertysolutions.com/wp-content/uploads/2017/11/Donahue-Roof-After-1-e1511830895781.jpg"
+          },
+          {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0f/44/13/8b/caption.jpg"
+          },
+          {
+            "url": "http://sites-of-memory.de/images/tallinnmaarjamae10.JPG"
+          },
+          {
+            "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1419341731654272"
+          },
+          {
+            "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1639855129413818"
+          },
+          {
+            "url": "https://remembermeproject.files.wordpress.com/2016/10/tuol-sleng-02.jpg?w=1000"
+          },
+          {
+            "url": "http://s0.geograph.org.uk/geophotos/01/31/80/1318066_e54d5329.jpg"
+          },
+          {
+            "url": "https://media-cdn.tripadvisor.com/media/photo-s/0a/a0/54/30/iwo-jima-survivors-memorial.jpg"
+          },
+          {
+            "url": "https://s3-media3.fl.yelpcdn.com/bphoto/6EpfiJ9UDbxBugJoPVNL2g/258s.jpg"
+          },
+          {
+            "url": "http://www.stevesnedeker.com/wp-content/2008/05/picture20019.jpg"
+          },
+          {
+            "url": "http://melbourneretainingwalls.com/wp-content/gallery/waurn-ponds-retaining-wall/waurn-ponds-landscaping-retaining-wall-2.jpg"
+          },
+          {
+            "url": "https://urmilatravels.files.wordpress.com/2018/02/veer-bhumi-rajiv-gandhi-memorial-delhi.jpg"
+          },
+          {
+            "url": "http://www.ci.bremerton.wa.us/PhotoGallery/9/342%20reservoir%20from%20CCF%20roof.jpg"
+          },
+          {
+            "url": "http://kbius.com/wp-content/uploads/flexiroof03.jpg"
+          },
+          {
+            "url": "http://florida-roof.com/wp-content/uploads/photo-gallery/imported_from_media_libray/residential-new-roof-installations-jacksonville.jpg?bwg=0"
+          },
+          {
+            "url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1786459258324522"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "wall"
+          }
+        ]
+      }
+    }
+  ]
+}

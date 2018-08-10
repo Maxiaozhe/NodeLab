@@ -1,0 +1,114 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/07c1v",
+          "description": "technology",
+          "score": 0.8792615,
+          "topicality": 0.8792615
+        },
+        {
+          "mid": "/m/0bs7_0t",
+          "description": "electronic device",
+          "score": 0.7572715,
+          "topicality": 0.7572715
+        },
+        {
+          "mid": "/m/02mrp",
+          "description": "electronics",
+          "score": 0.68007445,
+          "topicality": 0.68007445
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.622559,
+          "topicality": 0.622559
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/02mrp",
+            "score": 0.7345974,
+            "description": "Electronics"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.67767936,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/02cwm",
+            "score": 0.5715,
+            "description": "Design"
+          },
+          {
+            "entityId": "/m/01jwgf",
+            "score": 0.514,
+            "description": "Product"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://i.pinimg.com/736x/ab/0f/51/ab0f513968f44037b39ada24393d4395--polaroid-one-step-Polaroid-camera.jpg"
+          },
+          {
+            "url": "https://farm8.staticflickr.com/7678/16805462664_03e00b70c4_z.jpg"
+          },
+          {
+            "url": "https://positive-feedback.com/Issue47/images/P1014588.jpg"
+          },
+          {
+            "url": "https://img.tvc-mall.com/uploads/details/10170757A-4.jpg"
+          },
+          {
+            "url": "https://snappygoat.com/b/c6d438b98432028bb3aff50397c1ec2b67010c89"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/09/14/projector_murah_1505379913_2d9c7d4e.jpg"
+          },
+          {
+            "url": "https://www.picclickimg.com/d/l400/pict/173199955545_/Delta-Electronics-Power-Supply-DPS-550HB-550W-Tested-Sku180368.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/ff/90/38/ff90385113b1d8d7ed210a9af12fe789.jpg"
+          },
+          {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/813388IWrVL._SX425_.jpg"
+          },
+          {
+            "url": "https://i.ytimg.com/vi/T29VpYrQ3_k/hqdefault.jpg"
+          },
+          {
+            "url": "https://www.audiostream.com/images/styles/600_wide/public/11315chord.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/12/07/speaker_edifier_m1386subwoofer_1512627797_9dfc9930.jpg"
+          },
+          {
+            "url": "http://img.usaudiomart.com/uploads/large/1835312-chord-electronics-chordette-peach-dac-free-shipping.jpg"
+          },
+          {
+            "url": "http://epromo.co.za/wp-content/uploads/2017/11/Electronics-e1512029879136-254x169.jpg"
+          },
+          {
+            "url": "https://mercasonic.soniccdn.com/sda/large/1963/2516963.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/13/12/c3/1312c3d42d57fc89f43e58e567d7dc7c--docking-station-lasercut.jpg"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB178i_RXXXXXa4XXXXq6xXFXXXh/SENGTERBELLE-Libra-SE2PRO-ES9018K2M-SA9023-AD823X2-USB-Audio-Decoder-DAC-Mini-HIFI-AD823-Headphone-Amplifier-New.jpg_640x640.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "electronics"
+          }
+        ]
+      }
+    }
+  ]
+}

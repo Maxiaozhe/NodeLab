@@ -1,0 +1,454 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/09j2d",
+          "description": "clothing",
+          "score": 0.9795175,
+          "topicality": 0.9795175
+        },
+        {
+          "mid": "/m/02wzbmj",
+          "description": "standing",
+          "score": 0.9336419,
+          "topicality": 0.9336419
+        },
+        {
+          "mid": "/m/0250x",
+          "description": "costume",
+          "score": 0.8983926,
+          "topicality": 0.8983926
+        },
+        {
+          "mid": "/m/05zppz",
+          "description": "male",
+          "score": 0.8229012,
+          "topicality": 0.8229012
+        },
+        {
+          "mid": "/m/01443y",
+          "description": "headgear",
+          "score": 0.7413786,
+          "topicality": 0.7413786
+        },
+        {
+          "mid": "/m/02h7lkt",
+          "description": "fictional character",
+          "score": 0.73350936,
+          "topicality": 0.73350936
+        },
+        {
+          "mid": "/m/047vlmn",
+          "description": "outerwear",
+          "score": 0.7264931,
+          "topicality": 0.7264931
+        },
+        {
+          "mid": "/m/04s5jq",
+          "description": "costume design",
+          "score": 0.7156597,
+          "topicality": 0.7156597
+        },
+        {
+          "mid": "/m/01dvt1",
+          "description": "joint",
+          "score": 0.71310437,
+          "topicality": 0.71310437
+        },
+        {
+          "mid": "/m/01k5yg",
+          "description": "robe",
+          "score": 0.6850261,
+          "topicality": 0.6850261
+        },
+        {
+          "mid": "/m/03scnj",
+          "description": "line",
+          "score": 0.66170084,
+          "topicality": 0.66170084
+        },
+        {
+          "mid": "/m/0jjw",
+          "description": "art",
+          "score": 0.6557079,
+          "topicality": 0.6557079
+        },
+        {
+          "mid": "/m/01kr8f",
+          "description": "illustration",
+          "score": 0.65370566,
+          "topicality": 0.65370566
+        },
+        {
+          "mid": "/m/02qd0r",
+          "description": "human behavior",
+          "score": 0.6170405,
+          "topicality": 0.6170405
+        },
+        {
+          "mid": "/m/09jfs",
+          "description": "uniform",
+          "score": 0.6068313,
+          "topicality": 0.6068313
+        },
+        {
+          "mid": "/m/09cx8",
+          "description": "finger",
+          "score": 0.58700836,
+          "topicality": 0.58700836
+        },
+        {
+          "mid": "/m/0h8krv8",
+          "description": "top",
+          "score": 0.5341767,
+          "topicality": 0.5341767
+        },
+        {
+          "mid": "/m/03g09t",
+          "description": "clip art",
+          "score": 0.53006583,
+          "topicality": 0.53006583
+        },
+        {
+          "mid": "/m/06g1w2",
+          "description": "pattern",
+          "score": 0.51980126,
+          "topicality": 0.51980126
+        }
+      ],
+      "textAnnotations": [
+        {
+          "locale": "und",
+          "description": "李白\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 33,
+                "y": 78
+              },
+              {
+                "x": 47,
+                "y": 78
+              },
+              {
+                "x": 47,
+                "y": 115
+              },
+              {
+                "x": 33,
+                "y": 115
+              }
+            ]
+          }
+        },
+        {
+          "description": "李白",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 33,
+                "y": 78
+              },
+              {
+                "x": 47,
+                "y": 78
+              },
+              {
+                "x": 47,
+                "y": 115
+              },
+              {
+                "x": 33,
+                "y": 115
+              }
+            ]
+          }
+        }
+      ],
+      "fullTextAnnotation": {
+        "pages": [
+          {
+            "width": 303,
+            "height": 485,
+            "blocks": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 33,
+                      "y": 78
+                    },
+                    {
+                      "x": 47,
+                      "y": 78
+                    },
+                    {
+                      "x": 47,
+                      "y": 115
+                    },
+                    {
+                      "x": 33,
+                      "y": 115
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 33,
+                          "y": 78
+                        },
+                        {
+                          "x": 47,
+                          "y": 78
+                        },
+                        {
+                          "x": 47,
+                          "y": 115
+                        },
+                        {
+                          "x": 33,
+                          "y": 115
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 33,
+                              "y": 78
+                            },
+                            {
+                              "x": 47,
+                              "y": 78
+                            },
+                            {
+                              "x": 47,
+                              "y": 115
+                            },
+                            {
+                              "x": 33,
+                              "y": 115
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 33,
+                                  "y": 78
+                                },
+                                {
+                                  "x": 47,
+                                  "y": 78
+                                },
+                                {
+                                  "x": 47,
+                                  "y": 94
+                                },
+                                {
+                                  "x": 33,
+                                  "y": 94
+                                }
+                              ]
+                            },
+                            "text": "李",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedBreak": {
+                                "type": "LINE_BREAK"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 33,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 47,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 47,
+                                  "y": 115
+                                },
+                                {
+                                  "x": 33,
+                                  "y": 115
+                                }
+                              ]
+                            },
+                            "text": "白",
+                            "confidence": 0.97
+                          }
+                        ],
+                        "confidence": 0.98
+                      }
+                    ],
+                    "confidence": 0.98
+                  }
+                ],
+                "blockType": "TEXT",
+                "confidence": 0.98
+              }
+            ]
+          }
+        ],
+        "text": "李白\n"
+      },
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/01k5yg",
+            "score": 1.3955691,
+            "description": "Robe"
+          },
+          {
+            "entityId": "/m/04s5jq",
+            "score": 0.8012982,
+            "description": "Costume design"
+          },
+          {
+            "entityId": "/m/01kr8f",
+            "score": 0.7499674,
+            "description": "Illustration"
+          },
+          {
+            "entityId": "/m/0250x",
+            "score": 0.6670261,
+            "description": "Costume"
+          },
+          {
+            "entityId": "/m/09jfs",
+            "score": 0.6609627,
+            "description": "Uniform"
+          },
+          {
+            "entityId": "/m/02qd0r",
+            "score": 0.61794406,
+            "description": "Human behavior"
+          },
+          {
+            "entityId": "/m/0215n",
+            "score": 0.5934825,
+            "description": "Cartoon"
+          },
+          {
+            "entityId": "/m/01443y",
+            "score": 0.56552106,
+            "description": "Headgear"
+          },
+          {
+            "entityId": "/m/02xlf",
+            "score": 0.465,
+            "description": "Fiction"
+          },
+          {
+            "entityId": "/m/0k5v2",
+            "score": 0.4609,
+            "description": "Character"
+          },
+          {
+            "entityId": "/m/01jbm",
+            "score": 0.4366,
+            "description": "Behavior"
+          },
+          {
+            "entityId": "/m/0dgw9r",
+            "score": 0.4063,
+            "description": "Human"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://thumb1.shutterstock.com/display_pic_with_logo/542125/322566950/stock-vector-cartoon-doctor-and-nurse-vector-illustration-322566950.jpg"
+          },
+          {
+            "url": "https://previews.123rf.com/images/lineartestpilot/lineartestpilot1401/lineartestpilot140104754/24826281-cartoon-old-man-having-heart-attack.jpg"
+          },
+          {
+            "url": "https://png2.kisspng.com/20180629/jkr/kisspng-cartoon-drawing-line-art-m-02csf-confusion-5b363933943676.3550094815302802436071.png"
+          },
+          {
+            "url": "https://comps.canstockphoto.co.uk/cartoon-old-man-having-heart-attack-eps-vectors_csp20789631.jpg"
+          },
+          {
+            "url": "https://storify.com/services/proxy/2/5bLr2X0F3SauvtddDC-zBQ/http/pbs.twimg.com/media/B4irndbCAAEIHz_.jpg"
+          },
+          {
+            "url": "https://fscomps.fotosearch.com/compc/CSP/CSP003/cartoon-old-man-with-walking-frame-stock-illustrations__k17752680.jpg"
+          },
+          {
+            "url": "https://t1.pixers.pics/img-d5043af1/canvas-prints-crazy-scientist-cartoon-illustration.png?H4sIAAAAAAAAA5WPS26EMAyGrwNSwA55EHGA2c4RkAnJDC2QKKHtdE7foKq7dlF74bc__fC2Z_IOrNsPl2Bb5nl14Je1VHlILi9PVwmjGNZD6a4VYsnCu0s2hVg1XArWyI4p3jPNTT18ULncKL1W9-OIeQDIoo3Lo7wrwWawW4YOuQbUoHpVbEYi5fgYptTENRx7aDjigyts435jeHo9UIzr55hcQWc30hrv9A-E6ryQeCLo2fwOqn_kSkQmT5k-FCVHdc7gD9R3DmUdLlfQPUgNvQHkZ2u8XHUvdW-Qj4Z8R2KaaSbJjfDGI0ohLUfbqUmL9iXevgBiEX3rjQEAAA=="
+          },
+          {
+            "url": "https://comps.canstockphoto.com/pretty-little-blonde-girl-in-jeans-wear-illustration_csp51649427.jpg"
+          },
+          {
+            "url": "https://image.shutterstock.com/z/stock-vector-newsreader-cartoon-59755426.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/236x/7d/ac/14/7dac142d3e09fe3c0d3753d33f399a89--outfits-sun.jpg"
+          },
+          {
+            "url": "https://comps.canstockphoto.com/confident-handsome-brunet-young-man-eps-vector_csp48714243.jpg"
+          },
+          {
+            "url": "https://banner2.kisspng.com/20180404/kwe/kisspng-samba-music-brazil-carnival-swing-5ac4d94a40f2b4.5771924415228501222661.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/474x/c0/30/37/c0303739c43d44c35150079cc2b97b57--the-last-day-corp.jpg"
+          },
+          {
+            "url": "https://fscomps.fotosearch.com/compc/CSP/CSP343/cartoon-hooligan-with-speech-bubble-drawings__k28430654.jpg"
+          },
+          {
+            "url": "https://comps.gograph.com/cartoon-old-man-with-walking-stick_gg68689153.jpg"
+          },
+          {
+            "url": "https://comps.canstockphoto.com/comic-cartoon-old-man-with-walking-frame-image_csp24082174.jpg"
+          },
+          {
+            "url": "https://comps.canstockphoto.com/cartoon-old-farmer-leaning-on-fence-vector-clip-art_csp20788913.jpg"
+          },
+          {
+            "url": "https://png.pngtree.com/element_origin_min_pic/17/07/30/aa250de4bb40c0cef8400bab36e0bbb8.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/57/08/94/570894039d3ef665b9632eef91b144f0--esra-garance.jpg"
+          },
+          {
+            "url": "https://static3.bigstockphoto.com/8/8/1/large2/188016292.jpg"
+          },
+          {
+            "url": "https://thumb9.shutterstock.com/display_pic_with_logo/615877/649111696/stock-vector-cute-little-blonde-girl-in-jeans-wear-vector-illustration-of-human-standing-649111696.jpg"
+          },
+          {
+            "url": "https://static.wixstatic.com/media/266047_a10538f717e64bfcbd55747a3711623a~mv2_d_3508_4961_s_4_2.png/v1/fill/w_1131,h_1600,al_c,q_90/file.jpg"
+          },
+          {
+            "url": "https://thumb9.shutterstock.com/display_pic_with_logo/483673/205926535/stock-photo-cartoon-disappointed-old-man-205926535.jpg"
+          },
+          {
+            "url": "https://comps.canstockphoto.com/thought-bubble-textured-cartoon-posh-clipart-vector_csp34674653.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "standing"
+          }
+        ]
+      }
+    }
+  ]
+}

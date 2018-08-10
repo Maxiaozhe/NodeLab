@@ -9,26 +9,6 @@ const iwbApp = {};
      * @returns {WebSocket} wensocket
      */
     function wsClientRegist(wshost) {
-        //let ws = new WebSocket(wshost);
-        //let clientID = iwbApp.clientID;
-
-        //ws.onopen = function (e) {
-        //    console.log('Connection to server opened=>' + 'clientID: ' + clientID);
-        //    sendMessage('ping');
-        //};
-        //ws.onmessage = function (event) {
-        //    //console.log('Client received a message', event.data);
-        //   // $("#result").html(showResult(event.data));
-        //    let data = event.data;
-        //    if (typeof data === 'string' && data === 'pong') {
-        //        $("#wsstate").prop('class', 'connecting');
-        //        return;
-        //    }
-        //    jumpToUrl(event.data);
-        //};  
-        //ws.onclose = function (e) {
-        //    console.log('connection closed.');
-        //};
         var lockReconnect = false;  //reconnect locker
         let clientID = iwbApp.clientID;
         let ws = createWebSocket();

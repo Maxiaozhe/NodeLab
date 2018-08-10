@@ -9,17 +9,11 @@ const db = require('../control/database');
 const apiKey = config.APIKEY;   
 const maxResults = 100;
 
-//if (process.argv.length < 3) {
-//    console.log('Usage:');
-//    console.log(`  node ${path.basename(process.argv[1])} <imagePath>`);
-//    process.exit();
-//}
-
 /**
  * 画像認識を処理する
  * @param {string} imagePath 画像のパス
  * @param {WebSocket[]} wslist WebSocket
- * @param {Function} callback callback
+ * @param {Function} callback callback(未使用)
  */
 function detectImage(imagePath, wslist,callback) {
     const feature = 'TEXT_DETECTION';
@@ -124,6 +118,11 @@ function responseToWs(wslist, rawData,id,orgimg) {
             if (res && res.rowCount > 0) {
                 let row = res.rows[0];
                 pushMessage(iwbClients, JSON.stringify(row));
+            } else {
+                //データ見つからない場合、規定サイトへ飛ばす
+                pushMessage(iwbClients, JSON.stringify({
+                    url: config.defaultUrl
+                }));
             }
             client.release();
         });

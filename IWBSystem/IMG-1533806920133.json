@@ -1,0 +1,310 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/03q69",
+          "description": "hair",
+          "score": 0.9805347,
+          "topicality": 0.9805347
+        },
+        {
+          "mid": "/m/0dzct",
+          "description": "face",
+          "score": 0.95963407,
+          "topicality": 0.95963407
+        },
+        {
+          "mid": "/m/0ytgt",
+          "description": "child",
+          "score": 0.95837504,
+          "topicality": 0.95837504
+        },
+        {
+          "mid": "/m/06z04",
+          "description": "skin",
+          "score": 0.9508519,
+          "topicality": 0.9508519
+        },
+        {
+          "mid": "/m/01ntw3",
+          "description": "human hair color",
+          "score": 0.92149186,
+          "topicality": 0.92149186
+        },
+        {
+          "mid": "/m/0k0pj",
+          "description": "nose",
+          "score": 0.9153749,
+          "topicality": 0.9153749
+        },
+        {
+          "mid": "/m/0ds4x",
+          "description": "hairstyle",
+          "score": 0.87954104,
+          "topicality": 0.87954104
+        },
+        {
+          "mid": "/m/037p5b",
+          "description": "cheek",
+          "score": 0.86683875,
+          "topicality": 0.86683875
+        },
+        {
+          "mid": "/m/05r655",
+          "description": "girl",
+          "score": 0.86669886,
+          "topicality": 0.86669886
+        },
+        {
+          "mid": "/m/04hgtk",
+          "description": "head",
+          "score": 0.8601126,
+          "topicality": 0.8601126
+        },
+        {
+          "mid": "/m/025kyy",
+          "description": "forehead",
+          "score": 0.82643235,
+          "topicality": 0.82643235
+        },
+        {
+          "mid": "/m/014sv8",
+          "description": "eye",
+          "score": 0.79933417,
+          "topicality": 0.79933417
+        },
+        {
+          "mid": "/m/01bgsw",
+          "description": "toddler",
+          "score": 0.75029904,
+          "topicality": 0.75029904
+        },
+        {
+          "mid": "/m/0fc1fy",
+          "description": "black hair",
+          "score": 0.7443079,
+          "topicality": 0.7443079
+        },
+        {
+          "mid": "/m/028mzr",
+          "description": "hair coloring",
+          "score": 0.7242236,
+          "topicality": 0.7242236
+        },
+        {
+          "mid": "/m/0283dt1",
+          "description": "mouth",
+          "score": 0.6797544,
+          "topicality": 0.6797544
+        },
+        {
+          "mid": "/m/019nj4",
+          "description": "smile",
+          "score": 0.6587416,
+          "topicality": 0.6587416
+        },
+        {
+          "mid": "/m/02pd__z",
+          "description": "long hair",
+          "score": 0.6473008,
+          "topicality": 0.6473008
+        },
+        {
+          "mid": "/m/071j9r",
+          "description": "cool",
+          "score": 0.63698786,
+          "topicality": 0.63698786
+        },
+        {
+          "mid": "/m/0gjxqj",
+          "description": "bangs",
+          "score": 0.5956968,
+          "topicality": 0.5956968
+        },
+        {
+          "mid": "/m/02ksmb",
+          "description": "brown hair",
+          "score": 0.5932225,
+          "topicality": 0.5932225
+        },
+        {
+          "mid": "/m/0jnvp",
+          "description": "infant",
+          "score": 0.57661974,
+          "topicality": 0.57661974
+        },
+        {
+          "mid": "/m/016pp7",
+          "description": "happiness",
+          "score": 0.5678209,
+          "topicality": 0.5678209
+        },
+        {
+          "mid": "/m/0ds99lh",
+          "description": "fun",
+          "score": 0.5543061,
+          "topicality": 0.5543061
+        },
+        {
+          "mid": "/m/039xj_",
+          "description": "ear",
+          "score": 0.5335089,
+          "topicality": 0.5335089
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/027n3_",
+            "score": 0.61600816,
+            "description": "Eyebrow"
+          },
+          {
+            "entityId": "/m/03q69",
+            "score": 0.6126,
+            "description": "Hair"
+          },
+          {
+            "entityId": "/m/0gjxqj",
+            "score": 0.57811135,
+            "description": "Bangs"
+          },
+          {
+            "entityId": "/m/028mzr",
+            "score": 0.53255475,
+            "description": "Hair coloring"
+          },
+          {
+            "entityId": "/m/0fc1fy",
+            "score": 0.5029519,
+            "description": "Black hair"
+          },
+          {
+            "entityId": "/m/025kyy",
+            "score": 0.4955135,
+            "description": "Forehead"
+          },
+          {
+            "entityId": "/m/037p5b",
+            "score": 0.4679582,
+            "description": "Cheek"
+          },
+          {
+            "entityId": "/m/02pd__z",
+            "score": 0.46694115,
+            "description": "Long hair"
+          },
+          {
+            "entityId": "/m/0k0pj",
+            "score": 0.46198627,
+            "description": "Nose"
+          },
+          {
+            "entityId": "/m/02ksmb",
+            "score": 0.45558405,
+            "description": "Brown hair"
+          },
+          {
+            "entityId": "/m/01bgsw",
+            "score": 0.28219,
+            "description": "Toddler"
+          },
+          {
+            "entityId": "/g/1ptw69frn",
+            "score": 0.2728,
+            "description": "02PD - Circolo del Partito Democratico di Milano"
+          },
+          {
+            "entityId": "/m/014sv8",
+            "score": 0.23357518,
+            "description": "Eye"
+          },
+          {
+            "entityId": "/m/0ll350p",
+            "score": 0.1999,
+            "description": "Human mouth"
+          },
+          {
+            "entityId": "/m/0jnvp",
+            "score": 0.1965405,
+            "description": "Infant"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://c8.alamy.com/comp/EWGY10/portrait-of-happy-asian-girl-drinking-soy-milk-as-breakfast-young-EWGY10.jpg"
+          },
+          {
+            "url": "https://c8.alamy.com/comp/EWGY0H/asian-girl-eating-pizza-at-home-female-living-lifestyle-indoors-EWGY0H.jpg"
+          },
+          {
+            "url": "https://pbs.twimg.com/media/DZ5wxJoU0AAWwEY.jpg"
+          },
+          {
+            "url": "http://data.tokyogirlsupdate.com/wp/wp-content/uploads/2015/05/kurokami_2.jpg"
+          },
+          {
+            "url": "https://us.123rf.com/450wm/ryanking999/ryanking9991704/ryanking999170400304/76865580-cute-girl-eat-breakfast-and-smile-happily.jpg?ver=6"
+          },
+          {
+            "url": "https://us.123rf.com/450wm/ryanking999/ryanking9991601/ryanking999160100045/50279687-happy-cute-little-girl-smile-to-you-in-park-asian.jpg?ver=6"
+          },
+          {
+            "url": "https://www.colourbox.com/preview/4569061-little-girl-drawing-and-studying-at-home.jpg"
+          },
+          {
+            "url": "https://st2.depositphotos.com/2472223/5181/i/450/depositphotos_51815341-stock-photo-little-girl-eating-ice-cream.jpg"
+          },
+          {
+            "url": "https://i.ebayimg.com/images/g/KvwAAOSwYSBbYNz4/s-l300.jpg"
+          },
+          {
+            "url": "https://thumbs.dreamstime.com/z/little-girl-sits-armchair-portrait-small-dark-haired-elegant-white-blouse-34216898.jpg"
+          },
+          {
+            "url": "https://st.focusedcollection.com/14026668/i/650/focused_181964838-Little-girl-eating-yoghurt-blueberry.jpg"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB1Dl5OKVXXXXaOXXXXq6xXFXXXv/22-Princess-girl-reborn-babies-dolls-brown-long-hair-doll-reborn-girl-dressing-up-kids-toys.jpg"
+          },
+          {
+            "url": "https://shop.r10s.jp/linea-storia/cabinet/wig004/1110022_5.jpg"
+          },
+          {
+            "url": "https://previews.123rf.com/images/aykuli/aykuli1702/aykuli170200014/71610123-baby-girl-hugging-teddy-bear-indoor-in-her-room-devotion-concept-big-bear-toy.jpg"
+          },
+          {
+            "url": "https://cdn8.dissolve.com/p/D1062_59_871/D1062_59_871_600.jpg"
+          },
+          {
+            "url": "https://image.dhgate.com/albu_399755982_00-1.0x0/baby-girl-cardigan-spring-autumn-cute-toddler.jpg"
+          },
+          {
+            "url": "https://image.shutterstock.com/image-photo/cute-asian-girl-eating-lunch-260nw-555142837.jpg"
+          },
+          {
+            "url": "https://images.parents.mdpcdn.com/sites/parents.com/files/styles/week_by_week_card/public/CoughingBoy.png"
+          },
+          {
+            "url": "https://www.desktopbackground.org/t/2011/11/23/301636_korean-girl-group-computer-wallpapers-desktop-backgrounds_1980x1319_h.jpg"
+          },
+          {
+            "url": "https://hairstylecamp.com/wp-content/uploads/toddler-girl-hairstyle.jpg"
+          },
+          {
+            "url": "https://image.dhgate.com/0x0s/f2-albu-g4-M00-16-65-rBVaEFcbMxiAUN0DAAEluxjl9vc750.jpg/15-off-16-colors-3-inch-hand-made-girl-bowknot.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/236x/ed/43/24/ed43244534bef104eb75ef63c739f0ed--my-girl.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "girl"
+          }
+        ]
+      }
+    }
+  ]
+}

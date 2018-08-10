@@ -1,0 +1,123 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/07c1v",
+          "description": "technology",
+          "score": 0.8666652,
+          "topicality": 0.8666652
+        },
+        {
+          "mid": "/m/0bs7_0t",
+          "description": "electronic device",
+          "score": 0.7358553,
+          "topicality": 0.7358553
+        },
+        {
+          "mid": "/m/02mrp",
+          "description": "electronics",
+          "score": 0.6595436,
+          "topicality": 0.6595436
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.6096815,
+          "topicality": 0.6096815
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/02mrp",
+            "score": 0.733589,
+            "description": "Electronics"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.67765903,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/02cwm",
+            "score": 0.5715,
+            "description": "Design"
+          },
+          {
+            "entityId": "/m/01jwgf",
+            "score": 0.514,
+            "description": "Product"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://media.karousell.com/media/photos/products/2015/07/31/energizer_portable_charger_10000mah_1438339603_15226cad.jpg"
+          },
+          {
+            "url": "https://i.ebayimg.com/images/g/~bEAAOSwpRRWp3xO/s-l400.jpg"
+          },
+          {
+            "url": "https://get.pxhere.com/photo/laptop-smartphone-mobile-technology-white-telephone-gadget-black-mobile-phone-brand-electronics-design-books-smartisan-smartisan-t1-electronic-device-portable-communications-device-658236.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/ab/0f/51/ab0f513968f44037b39ada24393d4395--polaroid-one-step-Polaroid-camera.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/09/14/projector_murah_1505379913_2d9c7d4e.jpg"
+          },
+          {
+            "url": "https://i.ytimg.com/vi/T29VpYrQ3_k/hqdefault.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/06/22/pandora_neo_classic_no_900_radio_alarm_clock__maple_1498063745_a42aff82.jpg"
+          },
+          {
+            "url": "https://st.hzcdn.com/fimgs/d3318a7404ef170a_5155-w500-h400-b0-p0--contemporary-home-electronics.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2016/04/10/mp3_player_1460255378_b2756707.jpg"
+          },
+          {
+            "url": "https://images.offerup.com/3C9HZLeh4bO_A6vcH4d1vuKx-N0=/600x800/1498/1498d9245497485991f307ebfdb71386.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2018/02/26/apple_airport_extreme_1519652964_b5c1ae03.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/ff/90/38/ff90385113b1d8d7ed210a9af12fe789.jpg"
+          },
+          {
+            "url": "https://i.ebayimg.com/images/g/paoAAOSwYc5aOY9j/s-l300.jpg"
+          },
+          {
+            "url": "https://www.pult.ru/upload/iblock/264/264d0261d8b3dfb0c2c0a2f1a83a39ba.jpg"
+          },
+          {
+            "url": "https://vetco.net/spree/products/49447/original/MOLEX-03-09-2042.jpg"
+          },
+          {
+            "url": "https://www.picclickimg.com/d/l400/pict/253564067720_/Waeco-Secop-power-board-electronics-waeco-compressor-fridge.jpg"
+          },
+          {
+            "url": "http://p.globalsources.com/IMAGES/PDT/BIG/894/B1122050894.jpg"
+          },
+          {
+            "url": "https://media.karousell.com/media/photos/products/2017/10/31/sd2vita_version_20_micro_sd_adapter_for_ps_vita_henkaku_360_1509420160_2ce1bed80"
+          },
+          {
+            "url": "https://images.offerup.com/mdQ47Jo17bviGfoxMaNg_CcTCYg=/600x1066/ce3c/ce3cf2b11e714e43bd202be4752b32c5.jpg"
+          },
+          {
+            "url": "https://www.picclickimg.com/d/l400/pict/282974353614_/Great-River-Electronics-ME-1NV-Microphone-Preamp-DI.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "electronics"
+          }
+        ]
+      }
+    }
+  ]
+}

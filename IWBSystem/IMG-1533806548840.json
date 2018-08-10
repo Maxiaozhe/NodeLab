@@ -1,0 +1,695 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/025rgl",
+          "description": "plush",
+          "score": 0.9306818,
+          "topicality": 0.9306818
+        },
+        {
+          "mid": "/m/021mh_",
+          "description": "stuffed toy",
+          "score": 0.88443834,
+          "topicality": 0.88443834
+        },
+        {
+          "mid": "/m/03gq5hm",
+          "description": "font",
+          "score": 0.63755727,
+          "topicality": 0.63755727
+        },
+        {
+          "mid": "/m/01l0y0",
+          "description": "material",
+          "score": 0.63745487,
+          "topicality": 0.63745487
+        },
+        {
+          "mid": "/m/0153bq",
+          "description": "mascot",
+          "score": 0.6335721,
+          "topicality": 0.6335721
+        },
+        {
+          "mid": "/m/05mqq3",
+          "description": "snout",
+          "score": 0.594379,
+          "topicality": 0.594379
+        },
+        {
+          "mid": "/m/0138tl",
+          "description": "toy",
+          "score": 0.578375,
+          "topicality": 0.578375
+        }
+      ],
+      "textAnnotations": [
+        {
+          "locale": "zh",
+          "description": "原来良心长这样!\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 62,
+                "y": 305
+              },
+              {
+                "x": 368,
+                "y": 305
+              },
+              {
+                "x": 368,
+                "y": 351
+              },
+              {
+                "x": 62,
+                "y": 351
+              }
+            ]
+          }
+        },
+        {
+          "description": "原来良心长这样",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 62,
+                "y": 305
+              },
+              {
+                "x": 339,
+                "y": 305
+              },
+              {
+                "x": 339,
+                "y": 351
+              },
+              {
+                "x": 62,
+                "y": 351
+              }
+            ]
+          }
+        },
+        {
+          "description": "!",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 355,
+                "y": 305
+              },
+              {
+                "x": 368,
+                "y": 305
+              },
+              {
+                "x": 368,
+                "y": 351
+              },
+              {
+                "x": 355,
+                "y": 351
+              }
+            ]
+          }
+        }
+      ],
+      "fullTextAnnotation": {
+        "pages": [
+          {
+            "property": {
+              "detectedLanguages": [
+                {
+                  "languageCode": "zh",
+                  "confidence": 1
+                }
+              ]
+            },
+            "width": 400,
+            "height": 400,
+            "blocks": [
+              {
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 62,
+                      "y": 305
+                    },
+                    {
+                      "x": 368,
+                      "y": 305
+                    },
+                    {
+                      "x": 368,
+                      "y": 351
+                    },
+                    {
+                      "x": 62,
+                      "y": 351
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 62,
+                          "y": 305
+                        },
+                        {
+                          "x": 368,
+                          "y": 305
+                        },
+                        {
+                          "x": 368,
+                          "y": 351
+                        },
+                        {
+                          "x": 62,
+                          "y": 351
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "zh"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 62,
+                              "y": 305
+                            },
+                            {
+                              "x": 339,
+                              "y": 305
+                            },
+                            {
+                              "x": 339,
+                              "y": 351
+                            },
+                            {
+                              "x": 62,
+                              "y": 351
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 62,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 78,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 78,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 62,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "原",
+                            "confidence": 0.98
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 75,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 102,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 102,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 75,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "来",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 115,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 157,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 157,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 115,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "良",
+                            "confidence": 0.98
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 173,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 212,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 212,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 173,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "心",
+                            "confidence": 0.99
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 211,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 249,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 249,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 211,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "长",
+                            "confidence": 0.98
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 267,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 306,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 306,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 267,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "这",
+                            "confidence": 0.98
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 309,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 339,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 339,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 309,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "样",
+                            "confidence": 1
+                          }
+                        ],
+                        "confidence": 0.98
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "zh"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 355,
+                              "y": 305
+                            },
+                            {
+                              "x": 368,
+                              "y": 305
+                            },
+                            {
+                              "x": 368,
+                              "y": 351
+                            },
+                            {
+                              "x": 355,
+                              "y": 351
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "zh"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "LINE_BREAK"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 355,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 368,
+                                  "y": 305
+                                },
+                                {
+                                  "x": 368,
+                                  "y": 351
+                                },
+                                {
+                                  "x": 355,
+                                  "y": 351
+                                }
+                              ]
+                            },
+                            "text": "!",
+                            "confidence": 0.99
+                          }
+                        ],
+                        "confidence": 0.99
+                      }
+                    ],
+                    "confidence": 0.98
+                  }
+                ],
+                "blockType": "TEXT",
+                "confidence": 0.98
+              }
+            ]
+          }
+        ],
+        "text": "原来良心长这样!\n"
+      },
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/0gp6_0",
+            "score": 0.9104041,
+            "description": "Kumamoto"
+          },
+          {
+            "entityId": "/m/0r4pntj",
+            "score": 0.7043,
+            "description": "Kumamon"
+          },
+          {
+            "entityId": "/m/0153bq",
+            "score": 0.5762123,
+            "description": "Mascot"
+          },
+          {
+            "entityId": "/m/021mh_",
+            "score": 0.5295021,
+            "description": "Stuffed Animals & Cuddly Toys"
+          },
+          {
+            "entityId": "/m/01dws",
+            "score": 0.52455,
+            "description": "Bear"
+          },
+          {
+            "entityId": "/m/072kwm",
+            "score": 0.4711,
+            "description": "Image macro"
+          },
+          {
+            "entityId": "/m/0wj627s",
+            "score": 0.4692,
+            "description": "Sticker"
+          },
+          {
+            "entityId": "/m/025rgl",
+            "score": 0.3116281,
+            "description": "Plush"
+          },
+          {
+            "entityId": "/m/062t2",
+            "score": 0.2908,
+            "description": "Pain"
+          },
+          {
+            "entityId": "/m/05mqq3",
+            "score": 0.16768524,
+            "description": "Snout"
+          },
+          {
+            "entityId": "/m/03gq5hm",
+            "score": 0.1571491,
+            "description": "Font"
+          },
+          {
+            "entityId": "/m/01l0y0",
+            "score": 0.15448166,
+            "description": "Material"
+          },
+          {
+            "entityId": "/m/0bk8v",
+            "score": 0.1517,
+            "description": "Plastic surgery"
+          },
+          {
+            "entityId": "/m/01g7d_",
+            "score": 0.026358001,
+            "description": "Kumamoto Prefecture"
+          }
+        ],
+        "fullMatchingImages": [
+          {
+            "url": "http://p9.pstatp.com/large/16cd0006c5275440f1ee"
+          },
+          {
+            "url": "https://wx4.sinaimg.cn/large/c36bc670gy1fcxvtzfbg2j20b40b475n.jpg"
+          },
+          {
+            "url": "http://wx4.sinaimg.cn/bmiddle/c36bc670gy1fcxvtzfbg2j20b40b475n.jpg"
+          },
+          {
+            "url": "https://pic.cr173.com/up/2017-2/14876614904804670.jpg"
+          },
+          {
+            "url": "http://img1.how01.com/imgs/52/f6/7/46ff0004e7d1005a8069.jpg"
+          },
+          {
+            "url": "http://img.wowoqq.com/allimg/171223/1-1G223033511-50.jpg"
+          },
+          {
+            "url": "https://wx4.sinaimg.cn/wap720/c36bc670gy1fcxvtzfbg2j20b40b475n.jpg"
+          },
+          {
+            "url": "https://i1.kknews.cc/SIG=2fvuh1p/59390000020s6q5r019q.jpg"
+          },
+          {
+            "url": "http://i.17173cdn.com/2fhnvk/YWxqaGBf/cms3/fwVekCblEEuaDjm.jpg"
+          },
+          {
+            "url": "https://pic1.zhimg.com/v2-8e14d84cf608df9e73ed0b4f0f286a0b_b.jpg"
+          },
+          {
+            "url": "http://www.5577.com/up/2017-2/14876629641845227.jpg"
+          },
+          {
+            "url": "https://pic1.zhimg.com/80/v2-8e14d84cf608df9e73ed0b4f0f286a0b_hd.jpg"
+          },
+          {
+            "url": "https://niuerdata.g.com.cn/data/shareimg_oss/new_thumb/2018/06/06/thumb_f2a014b40454fea339bad942ab284d8f.JPEG"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "https://i.pinimg.com/736x/23/0d/d1/230dd12be7f2984707e6a8f4143ce4f4--kumamon-rilakkuma.jpg"
+          },
+          {
+            "url": "https://a.wattpad.com/cover/114733299-288-k14835.jpg"
+          },
+          {
+            "url": "https://img.memecdn.com/kumamon-sacrifice_fb_2366637.jpg"
+          },
+          {
+            "url": "http://agarioskins.com/submitted/useruploads/kumamon.png"
+          },
+          {
+            "url": "https://www.japantimes.co.jp/wp-content/uploads/2018/01/n-kumamon-a-20180124-200x200.jpg"
+          },
+          {
+            "url": "http://cdnsg.kilala.vn/data/upload/article/3420/Facebook%20Kumamon.jpg"
+          },
+          {
+            "url": "https://cdn.animenewsnetwork.com/thumbnails/max500x500/cms/interest/74775/20140521-00010001-qbiz-000-3-view.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/f1/4f/c3/f14fc37ed359fe7572962d10fe74e74b--japan.jpg"
+          },
+          {
+            "url": "http://franksgourmetgrille.com/wp-content/uploads/2018/04/is-your-refrigerator-running-meme-wonderful-photos-kumamon-of-is-your-refrigerator-running-meme.jpg"
+          },
+          {
+            "url": "http://static.ettoday.net/images/1102/d1102798.jpg"
+          },
+          {
+            "url": "http://e-dole.com/wp-content/uploads/2018/07/awesome-kumamon-meme-kumamon.jpg"
+          },
+          {
+            "url": "https://www.japantimes.co.jp/wp-content/uploads/2018/01/p7-nihongo-a-20180116-e1516003508224-870x995.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/22/23/41/2223417094a47e995e824fb8f9d0d29c.jpg"
+          },
+          {
+            "url": "https://data.whicdn.com/images/203600364/superthumb.jpg?t=1444801424"
+          },
+          {
+            "url": "https://img.memecdn.com/the-best-of-kumamon_fb_2238903.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/236x/4a/1a/4a/4a1a4a28d22486b49ce6c2fea6c38007--feelings-kawaii.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/a6/76/ca/a676caf42ab20c51d94dc678463dd77d--kumamoto-job-interviews.jpg"
+          },
+          {
+            "url": "http://static.ettoday.net/images/1102/d1102812.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/736x/a6/e9/a5/a6e9a5e5aaffcd5a643c6578456c7569--kawaii-japan.jpg"
+          },
+          {
+            "url": "https://i.ebayimg.com/00/s/NTE5WDU1Ng==/z/diAAAOSw4shX92OQ/$_57.JPG?set_id=8800005007"
+          },
+          {
+            "url": "https://image.shutterstock.com/image-photo/kumamoto-japan-august-27-kumamon-260nw-489400372.jpg"
+          },
+          {
+            "url": "https://i.pinimg.com/originals/6b/d4/00/6bd4003c8ccd05692ec4f0e0f2746585.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "Kumamon"
+          }
+        ]
+      }
+    }
+  ]
+}

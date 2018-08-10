@@ -6,7 +6,8 @@ module.exports = {
     ServiceAccountKey: "9c2dcb0629ce7c664728b1063dd003ce3808262a",
     WS_HOST:"ws://52.198.165.235",
     WS_PATH: "/ws", //resive client(IWB側)
-    HPPT_PORT:"80",
+    HPPT_PORT: "80",
+    defaultUrl: "https://rfgricoh.sharepoint.com/teams/sharepoint669/SitePages/類似画像検索システム.aspx",
     postgreSql: {
         user: 'postgres',
         password: 'postgres',

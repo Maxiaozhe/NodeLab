@@ -1,0 +1,134 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/0gjbg72",
+          "description": "shelf",
+          "score": 0.806221,
+          "topicality": 0.806221
+        },
+        {
+          "mid": "/m/0h8n982",
+          "description": "shelving",
+          "score": 0.75199175,
+          "topicality": 0.75199175
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.70102,
+          "topicality": 0.70102
+        },
+        {
+          "mid": "/m/0c_jw",
+          "description": "furniture",
+          "score": 0.5969646,
+          "topicality": 0.5969646
+        },
+        {
+          "mid": "/m/05b5b_f",
+          "description": "display case",
+          "score": 0.55423,
+          "topicality": 0.55423
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/m/0gjbg72",
+            "score": 1.2822399,
+            "description": "Shelf"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.69082487,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/05b5b_f",
+            "score": 0.61910987,
+            "description": "Display case"
+          },
+          {
+            "entityId": "/m/02cwm",
+            "score": 0.5739,
+            "description": "Design"
+          },
+          {
+            "entityId": "/m/01jwgf",
+            "score": 0.5256,
+            "description": "Product"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "http://cdn3.volusion.com/yeqmg.opwrk/v/vspfiles/photos/SSHELF-01--2.jpg?1437572586"
+          },
+          {
+            "url": "http://img.archiexpo.com/images_ae/photo-g/52703-2108073.jpg"
+          },
+          {
+            "url": "http://www.plexirom.eu/1233-thickbox_default/shelf-with-sides.jpg"
+          },
+          {
+            "url": "http://www.antiquities-setruk.com/images/607x500/DSCN1479.JPG"
+          },
+          {
+            "url": "http://img.archiexpo.com/images_ae/photo-g/65240-11613260.jpg"
+          },
+          {
+            "url": "http://legambienteanzionettuno.info/wp-content/uploads/2017/09/wall-shelves-design-modern-black-shelves-and-wall-mounted-within-dimensions-1024-x-863.jpg"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB1_zn4ayERMeJjSspjq6ApOXXaU/PE-suspension-box-transparent-flexible-film-display-shelf-Jewelry-brooch-jewelry-suspension-box-frame-display-box.jpg"
+          },
+          {
+            "url": "http://www.traderscity.com/board/userpix98/13585-Led-Jewelry-Display-Showcase-And-Display-Counter-For-Jewelry-Showroom-Furniture-1.jpg"
+          },
+          {
+            "url": "https://static1.squarespace.com/static/5724d09c20c647f685db9bc9/586a4b9ab3db2ba536739e11/5877841d5016e15c313c2961/1485869414201/DAV_2523.JPG?format=500w"
+          },
+          {
+            "url": "https://image.made-in-china.com/43f34j00AsPQvyCIhazt/Wall-Cabient-and-Slatwall-for-The-Specialrity-Store-Display-Shelf.jpg"
+          },
+          {
+            "url": "https://images.regalraum.com/media/catalog/product/cache/11/image/9df78eab33525d08d6e5fb8d27136e95/w/a/wall-shelf-black-showcase-office.jpg"
+          },
+          {
+            "url": "https://static1.squarespace.com/static/5724d09c20c647f685db9bc9/586a4b9ab3db2ba536739e11/5877840603596ef42630547c/1485869384889/DAV_2514.JPG?format=1500w"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB1XzH.KXXXXXblXFXXq6xXFXXXS/10PCS-Heavy-Duty-Stainless-Steel-Wall-Brackets-Support-Frame-35cm-length-Folding-Shelf-Bracket-Free-Shipping.jpg_220x220.jpg"
+          },
+          {
+            "url": "https://media.restorationhardware.com/is/image/rhis/prod1330032_F11?$PD$&illum=0&wid=650"
+          },
+          {
+            "url": "https://ae01.alicdn.com/kf/HTB1kGkpSpXXXXaeapXXq6xXFXXXb/5x-Acrylic-Plastic-Office-Business-Display-Card-Desk-Holder-Stand-Shelf.jpg_640x640.jpg"
+          },
+          {
+            "url": "http://img.archiexpo.com/images_ae/photo-g/68823-11465354.jpg"
+          },
+          {
+            "url": "https://sc01.alicdn.com/kf/HTB10pPjLpXXXXaKapXXq6xXFXXXQ/Customized-High-Quality-Machining-White-Powder-Coated.jpg_350x350.jpg"
+          },
+          {
+            "url": "https://timg.china.cn/3/1_144_86102_750_750.jpg"
+          },
+          {
+            "url": "https://classicdesign.it/media/025/easy-1.s.jpg"
+          },
+          {
+            "url": "http://www.traderscity.com/board/userpix119/13585-High-End-Black-Jewelry-Tower-Showcase-And-Wall-Cabinet-Showcase-1.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "shelf"
+          }
+        ]
+      }
+    }
+  ]
+}

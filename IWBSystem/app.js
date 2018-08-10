@@ -21,6 +21,7 @@ try {
     const iwbServer = require('./routes/iwbServer');
     const upload = require("./routes/upload");
     const regist = require("./routes/registServer");
+    const tablet = require("./routes/tabletServer");
 
 
     const app = express();
@@ -44,7 +45,8 @@ try {
     app.use(express.static(path.join(__dirname, 'public')));
     //app.use(uploader.single('file');
 
-    app.use('/', sdServer);
+    app.use('/', tablet);
+    app.use('/sd', sdServer);
     app.use("/iwb", iwbServer);
     app.use("/reg", regist);
     app.use('/upload', upload.router);

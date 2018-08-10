@@ -42,7 +42,6 @@ router.post('/', uploader.single('file'), function (req, res, next) {
         let orgname = req.file.originalname;
         let clientID = req.param('clientID');
         //画像検索を行う
-        let wsSelf=getWsClient(clientID);
         let wslist = getWebSockets(clientID);
         visionApi.detectImage(`./public/upload/${filename}`, wslist);
         res.send('POST OK' + orgname);

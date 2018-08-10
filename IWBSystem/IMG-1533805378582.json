@@ -1,0 +1,243 @@
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/02n3pb",
+          "description": "product",
+          "score": 0.86398226,
+          "topicality": 0.86398226
+        },
+        {
+          "mid": "/m/02kjb_",
+          "description": "drug",
+          "score": 0.84142494,
+          "topicality": 0.84142494
+        },
+        {
+          "mid": "/m/018tkd",
+          "description": "service",
+          "score": 0.76687545,
+          "topicality": 0.76687545
+        },
+        {
+          "mid": "/m/01jwgf",
+          "description": "product",
+          "score": 0.76671916,
+          "topicality": 0.76671916
+        },
+        {
+          "mid": "/m/0191_7",
+          "description": "retail",
+          "score": 0.7342626,
+          "topicality": 0.7342626
+        },
+        {
+          "mid": "/m/018y_6",
+          "description": "inventory",
+          "score": 0.56666327,
+          "topicality": 0.56666327
+        },
+        {
+          "mid": "/m/01rfps",
+          "description": "pharmacy",
+          "score": 0.5615972,
+          "topicality": 0.5615972
+        },
+        {
+          "mid": "/m/01_7r6",
+          "description": "prescription drug",
+          "score": 0.55819225,
+          "topicality": 0.55819225
+        },
+        {
+          "mid": "/m/018l35",
+          "description": "pharmaceutical drug",
+          "score": 0.5080932,
+          "topicality": 0.5080932
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/t/2h1chzkpmxx3m",
+            "score": 0.7141
+          },
+          {
+            "entityId": "/m/02jwgz",
+            "score": 0.7095,
+            "description": "Ricoh"
+          },
+          {
+            "entityId": "/m/01m4t",
+            "score": 0.4872,
+            "description": "Printer"
+          },
+          {
+            "entityId": "/m/0c5mq",
+            "score": 0.4768,
+            "description": "Printing"
+          },
+          {
+            "entityId": "/m/0dd37",
+            "score": 0.4659,
+            "description": "Laser printing"
+          },
+          {
+            "entityId": "/m/03bxgrp",
+            "score": 0.433,
+            "description": "Company"
+          },
+          {
+            "entityId": "/m/019y26",
+            "score": 0.4261,
+            "description": "Multi-function printer"
+          },
+          {
+            "entityId": "/g/11bzszpm4v",
+            "score": 0.30415,
+            "description": "Shop fitters in London"
+          },
+          {
+            "entityId": "/m/01jwgf",
+            "score": 0.285,
+            "description": "Product"
+          },
+          {
+            "entityId": "/m/025_b",
+            "score": 0.2322,
+            "description": "Consumer"
+          },
+          {
+            "entityId": "/m/03y18t",
+            "score": 0.23112607,
+            "description": "Product design"
+          },
+          {
+            "entityId": "/m/018y_6",
+            "score": 0.22133802,
+            "description": "Inventory"
+          },
+          {
+            "entityId": "/m/082t4c",
+            "score": 0.2048,
+            "description": "No"
+          },
+          {
+            "entityId": "/m/015hcf",
+            "score": 0.1996,
+            "description": "Idea"
+          },
+          {
+            "entityId": "/m/04jpl",
+            "score": 0.07947,
+            "description": "London"
+          }
+        ],
+        "fullMatchingImages": [
+          {
+            "url": "https://www.ricoh.co.jp/printer/spc/840me/img/img-main-840me.jpg"
+          }
+        ],
+        "partialMatchingImages": [
+          {
+            "url": "https://www.ricoh.co.jp/printer/common/data/img-main-top_spc840me.jpg?sscl=pptop_main_840me"
+          },
+          {
+            "url": "https://www.bigness.uk.com/wp-content/uploads/2017/12/Pharmacy-Shopfitters-in-London.jpg"
+          },
+          {
+            "url": "https://www.aecoc.es/wp-content/uploads/2018/06/1516038567871-355x156.jpg"
+          }
+        ],
+        "pagesWithMatchingImages": [
+          {
+            "url": "https://www.bigness.uk.com/shopfitting/",
+            "pageTitle": "Shop Fitters in London | Shopfitting Contractors in London | Bigness",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.bigness.uk.com/wp-content/uploads/2017/12/Pharmacy-Shopfitters-in-London.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.bigness.uk.com/shopfitting/pharmacy-shop-fitters-london/",
+            "pageTitle": "Pharmacy Shopfitters London | Pharmacy Shopfitting Services London",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.bigness.uk.com/wp-content/uploads/2018/01/Pharmacy-Shopfitters-in-London.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.ricoh.co.jp/printer/",
+            "pageTitle": "プリンター | リコー",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.ricoh.co.jp/printer/common/data/img-main-top_spc840me.jpg?sscl=pptop_main_840me"
+              }
+            ]
+          },
+          {
+            "url": "https://www.ricoh.co.jp/printer/spc/840me/",
+            "pageTitle": "<b>RICOH</b> SP C840ME / カラーレーザープリンター | リコー",
+            "fullMatchingImages": [
+              {
+                "url": "https://www.ricoh.co.jp/printer/spc/840me/img/img-main-840me.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.aecoc.es/articulos/tendencias-de-consumo-de-frutas-y-verduras/",
+            "pageTitle": "Tendencias de consumo de frutas y verduras - Aecoc",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.aecoc.es/wp-content/uploads/2018/06/1516038567871-355x156.jpg"
+              }
+            ]
+          },
+          {
+            "url": "https://www.aecoc.es/articulos/c84-vancouver-ecosistema-de-la-experiencia-de-compra/",
+            "pageTitle": "C84 - Vancouver Ecosistema de la experiencia de compra - Aecoc",
+            "partialMatchingImages": [
+              {
+                "url": "https://www.aecoc.es/wp-content/uploads/2018/06/1516038567871-355x156.jpg"
+              }
+            ]
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "http://bolee.com/resources/items/img/2016/04/08/3679738511460125711.jpeg"
+          },
+          {
+            "url": "https://www.inplantgraphics.com/wp-content/uploads/sites/9/2017/01/intermountain_ricohs-1.jpg"
+          },
+          {
+            "url": "https://i.ytimg.com/vi/_8grYKEbwZs/maxresdefault.jpg"
+          },
+          {
+            "url": "https://3dprintingindustry.com/wp-content/uploads/2018/07/Ricoh-AM-370x260.jpg"
+          },
+          {
+            "url": "http://tz.net/wp-content/uploads/2016/04/16_04_05-Ricoh.jpg?x74877"
+          },
+          {
+            "url": "https://media.glassdoor.com/l/fb/b7/da/99/restaurant.jpg"
+          },
+          {
+            "url": "https://i.machinio.com/medium/kspgiz/2343785884.jpg"
+          },
+          {
+            "url": "https://www.nextgrp.com.au/images/phocagallery/projects/interiors/ricoh-distribution-centre/ricoh-dist-centre-mcp_0012.jpg"
+          }
+        ],
+        "bestGuessLabels": [
+          {
+            "label": "Ricoh"
+          }
+        ]
+      }
+    }
+  ]
+}

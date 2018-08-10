@@ -26,9 +26,10 @@ const client = {};
                 $(filePicker).removeClass('dragover');
                 e.preventDefault();
                 var files = e.originalEvent.dataTransfer.files;
+                common.showLoader();
                 uploadImage(files[0], function () {
                     //アップロード処理完了
-                    //alert("Uploaded!!!!");
+                    common.changeStatus();
                 });
             }).on('dragout', function (e) {
                 $(filePicker).removeClass('dragover');
@@ -38,11 +39,12 @@ const client = {};
 
             $(fileInput).on("change", function () {
                 let files = $(this).get(0).files;
-                if (files) {
+                if (files && files.length > 0) {
+                    common.showLoader();
                     // アップロード処理を行うメソッド
                     uploadImage(files[0], function () {
                         //アップロード処理完了
-                        //alert("Uploaded!!!!");
+                        common.changeStatus();
                     });
                 }
             });
@@ -195,6 +197,7 @@ const client = {};
                     }
                     $("#result").html(showResult(event.data));
                     initRegistForm();
+                    common.hideLoader();
                 };
                 wsclient.onclose = function (e) {
                     console.log('connection closed.');
@@ -204,6 +207,7 @@ const client = {};
             } catch (ex) {
                 console.error(ex);
                 reconnect();
+                common.hideLoader();
             }
         }
 
@@ -344,6 +348,7 @@ const client = {};
             }
             $("<span class='glyphicon glyphicon-ok'></span>").insertBefore(label);
         });
+        common.showLoader();
         $("#regist").click(regist);
     }
     //登録
@@ -365,11 +370,13 @@ const client = {};
             data: postData,
             
             success: function (response) {
+                common.hideLoader();
                 alert('登録しました。');
             },
              error: function (data) {
-                let error = JSON.stringify(data);
-                alert(error);
+                 common.hideLoader();
+                 let error = JSON.stringify(data);
+                 alert(error);
             }
         });
     }
