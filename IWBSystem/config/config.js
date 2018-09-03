@@ -2,9 +2,9 @@
 module.exports = {
     /*画像ファイルの保存環境*/
     uploadPath: './public/upload/',
-    APIKEY: "AIzaSyBL6NtX1XlJKS547PZ9OEHRtt-tP_d9pxo",
-    ServiceAccountKey: "9c2dcb0629ce7c664728b1063dd003ce3808262a",
-    WS_HOST:"ws://52.198.165.235",
+    APIKEY: "",
+    ServiceAccountKey: "",
+    WS_HOST:"ws://localhost",
     WS_PATH: "/ws", //resive client(IWB側)
     HPPT_PORT: "80",
     defaultUrl: "https://rfgricoh.sharepoint.com/teams/sharepoint669/SitePages/類似画像検索システム.aspx",
